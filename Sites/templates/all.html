@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ullmannite » Sites</title>
+
+    <!-- Metadata -->
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="greeting">
+        <h1>I am Alexander</h1>
+        <h6>I make web applications</h6>
+        <button>Say Hello</button>
+      </div> <!-- .greeting -->
+      <div class="sites">
+        {% for site in sites %}
+        <div class="site">
+          <a href="#">
+            <h4>{{ site.title }}</h4>
+            <span>{{ site.sub }}</span>
+            <p></p>
+          </a>
+        </div> <!-- .site -->
+        {% endfor %}
+      </div> <!-- .sites -->
+      <img src="Logo.png" alt="Logo.png">
+    </div> <!-- .container -->
+  </body>
+</html>
