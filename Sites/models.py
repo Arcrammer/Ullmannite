@@ -8,4 +8,5 @@ class Site(models.Model):
     description = models.CharField(max_length=128)
     thumbnail_filename = models.CharField(max_length=128)
 
-admin.site.register(Site)
+class SiteAdmin(admin.ModelAdmin):
+    list_display = ('title', 'link', 'subtitle')

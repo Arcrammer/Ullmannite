@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,6 +6,9 @@
 
     <!-- Metadata -->
     <meta charset="utf-8">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Main.css' %}">
   </head>
   <body>
     <div class="container">
@@ -16,10 +20,9 @@
       <div class="sites">
         {% for site in sites %}
         <div class="site">
-          <a href="#">
-            <h4>{{ site.title }}</h4>
-            <span>{{ site.sub }}</span>
-            <p></p>
+          <a href="{{ site.link }}">
+            <h4>{{ site.title }} <span>{{ site.subtitle }}</span></h4>
+            <p>{{ site.description }}</p>
           </a>
         </div> <!-- .site -->
         {% endfor %}
