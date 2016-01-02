@@ -4,6 +4,44 @@ body {
   font-family: 'Bebas Neue';
 }
 
+/* line 9, ../Sass/Main.scss */
+.greeting {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+/* line 14, ../Sass/Main.scss */
+.greeting .white-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 18, ../Sass/Main.scss */
+.greeting .image-overlay {
+  width: 100%;
+}
+/* line 22, ../Sass/Main.scss */
+.greeting .image-holder {
+  overflow: auto;
+}
+/* line 26, ../Sass/Main.scss */
+.greeting .white-overlay,
+.greeting div:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 36, ../Sass/Main.scss */
+.greeting div h1 {
+  font-size: 4em;
+}
+/* line 40, ../Sass/Main.scss */
+.greeting div h4 {
+  letter-spacing: 2px;
+  font-size: 3em;
+  font-weight: 300;
+}
+
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../Fonts/BebasNeue-Light.eot");

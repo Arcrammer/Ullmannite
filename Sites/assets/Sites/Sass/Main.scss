@@ -5,6 +5,48 @@ body {
   font-family: 'Bebas Neue';
 }
 
+// Greeting
+.greeting {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+
+  .white-overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .image-overlay {
+    width: 100%;
+  }
+
+  .image-holder {
+    overflow: auto;
+  }
+
+  .white-overlay,
+  div:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  div {
+    h1 {
+      font-size: 4em;
+    }
+
+    h4 {
+      letter-spacing: 2px;
+      font: {
+        size: 3em;
+        weight: 300;
+      }
+    }
+  }
+}
+
 // Fonts
 @font-face {
   font-family: 'Bebas Neue';

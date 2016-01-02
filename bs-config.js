@@ -21,6 +21,7 @@ module.exports = {
     },
     "files": [
       "*/templates/*",
+      "*/assets/*/Scripts/*",
       "*/assets/*/Stylesheets/*"
     ],
     "watchOptions": {},
