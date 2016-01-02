@@ -4,23 +4,22 @@ body {
   font-family: 'Bebas Neue';
 }
 
-/* line 9, ../Sass/Main.scss */
+/* line 10, ../Sass/Main.scss */
 .greeting {
   overflow: hidden;
   text-align: center;
-  width: 100%;
 }
 /* line 14, ../Sass/Main.scss */
 .greeting .white-overlay {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.915);
 }
 /* line 18, ../Sass/Main.scss */
-.greeting .image-overlay {
-  width: 100%;
-}
-/* line 22, ../Sass/Main.scss */
 .greeting .image-holder {
   overflow: auto;
+}
+/* line 21, ../Sass/Main.scss */
+.greeting .image-holder img {
+  min-height: 100%;
 }
 /* line 26, ../Sass/Main.scss */
 .greeting .white-overlay,
@@ -31,17 +30,76 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 36, ../Sass/Main.scss */
-.greeting div h1 {
-  font-size: 4em;
+/* line 35, ../Sass/Main.scss */
+.greeting div:last-of-type {
+  border-right: 17.5px solid white;
+  border-bottom: 17.5px solid white;
+  border-left: 17.5px solid white;
+  height: 40%;
+  margin: auto;
+  width: 60%;
 }
-/* line 40, ../Sass/Main.scss */
-.greeting div h4 {
-  letter-spacing: 2px;
+/* line 45, ../Sass/Main.scss */
+.greeting div:last-of-type::before, .greeting div:last-of-type::after {
+  background-color: white;
+  content: '';
+  height: 17.5px;
+  position: absolute;
+  top: 0;
+  width: 12.13592%;
+}
+/* line 55, ../Sass/Main.scss */
+.greeting div:last-of-type::before {
+  left: 0;
+}
+/* line 59, ../Sass/Main.scss */
+.greeting div:last-of-type::after {
+  right: 0;
+}
+/* line 63, ../Sass/Main.scss */
+.greeting div:last-of-type h1 {
+  font-size: 4em;
+  letter-spacing: 5px;
+  margin-left: 1.5%;
+  position: relative;
+  top: -17.48252%;
+  z-index: 1;
+}
+/* line 72, ../Sass/Main.scss */
+.greeting div:last-of-type h4 {
+  letter-spacing: 3.5px;
+  line-height: 115%;
   font-size: 3em;
   font-weight: 300;
 }
 
+/* line 84, ../Sass/Main.scss */
+.aquamarine-button {
+  background-color: transparent;
+  font-family: "Source Sans Pro";
+}
+
+@media (max-width: 750px) {
+  /* line 94, ../Sass/Main.scss */
+  .greeting div:last-of-type {
+    border-right: 12.5px solid white;
+    border-bottom: 12.5px solid white;
+    border-left: 12.5px solid white;
+    padding: 15px 8.45411%;
+  }
+  /* line 102, ../Sass/Main.scss */
+  .greeting div:last-of-type::before, .greeting div:last-of-type::after {
+    height: 12.5px;
+    width: 5.66343%;
+  }
+  /* line 108, ../Sass/Main.scss */
+  .greeting div:last-of-type h1 {
+    font-size: 2.5em;
+    margin-left: 1%;
+    letter-spacing: 2.5px;
+    top: -11.95219%;
+  }
+}
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../Fonts/BebasNeue-Light.eot");
