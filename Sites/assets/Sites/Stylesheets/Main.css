@@ -54,3 +54,9 @@ body {
   src: url("../Fonts/BebasNeue.eot?#iefix") format("embedded-opentype"), url("../Fonts/BebasNeue.woff2") format("woff2"), url("../Fonts/BebasNeue.woff") format("woff"), url("../Fonts/BebasNeue.ttf") format("truetype"), url("../Fonts/BebasNeue.svg#bebas_neueregular") format("svg");
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../Fonts/SourceSansPro.eot");
+  src: url("../Fonts/SourceSansPro.eot?#iefix") format("embedded-opentype"), url("../Fonts/SourceSansPro.woff2") format("woff2"), url("../Fonts/SourceSansPro.woff") format("woff"), url("../Fonts/SourceSansPro.ttf") format("truetype"), url("../Fonts/SourceSansPro.svg#bebas_neuelight") format("svg");
+  font-weight: 300;
+}
