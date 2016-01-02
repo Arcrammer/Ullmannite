@@ -83,7 +83,42 @@ $greeting-border-width: 17.5px;
 // Buttons
 .aquamarine-button {
   background-color: transparent;
-  font-family: "Source Sans Pro";
+  border: {
+    color: rgb(71,224,205);
+    color: -moz-linear-gradient(-45deg,  rgba(71,224,205,1) 0%, rgba(45,206,187,1) 100%);
+    color: -webkit-linear-gradient(-45deg,  rgba(71,224,205,1) 0%,rgba(45,206,187,1) 100%);
+    color: linear-gradient(135deg,  rgba(71,224,205,1) 0%,rgba(45,206,187,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47e0cd', endColorstr='#2dcebb',GradientType=1 );
+
+    style: solid;
+    width: 3.5px;
+  }
+  cursor: pointer;
+  color: #595959;
+  font: {
+    family: "Source Sans Pro";
+    size: 1em;
+  }
+  letter-spacing: 0.25px;
+  outline: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 150ms;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #48e0ce;
+    color: white;
+    border: {
+      color: white;
+      width: 2px;
+    }
+  }
+
+  &:active {
+    background-color: #167368;
+  }
 }
 
 // Responsiveness
@@ -147,4 +182,42 @@ $greeting-border-width: 17.5px;
        url('../Fonts/SourceSansPro.ttf') format('truetype'),
        url('../Fonts/SourceSansPro.svg#bebas_neuelight') format('svg');
   font-weight: 300;
+}
+
+// Hover
+/* Outline Out */
+.hvr-outline-out {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+  }
+
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    border: {
+      color: rgb(71,224,205);
+      color: -moz-linear-gradient(-45deg,  rgba(71,224,205,1) 0%, rgba(45,206,187,1) 100%);
+      color: -webkit-linear-gradient(-45deg,  rgba(71,224,205,1) 0%,rgba(45,206,187,1) 100%);
+      color: linear-gradient(135deg,  rgba(71,224,205,1) 0%,rgba(45,206,187,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47e0cd', endColorstr='#2dcebb',GradientType=1 );
+
+      style: solid;
+      width: 3.5px;
+    }
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+  }
 }

@@ -76,23 +76,49 @@ body {
 /* line 84, ../Sass/Main.scss */
 .aquamarine-button {
   background-color: transparent;
+  border-color: #47e0cd;
+  border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: -webkit-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: linear-gradient(135deg, #47e0cd 0%, #2dcebb 100%);
+  border-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47e0cd', endColorstr='#2dcebb',GradientType=1 );
+  border-style: solid;
+  border-width: 3.5px;
+  cursor: pointer;
+  color: #595959;
   font-family: "Source Sans Pro";
+  font-size: 1em;
+  letter-spacing: 0.25px;
+  outline: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 150ms;
+}
+/* line 108, ../Sass/Main.scss */
+.aquamarine-button:hover, .aquamarine-button:active, .aquamarine-button:focus {
+  background-color: #48e0ce;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+}
+/* line 119, ../Sass/Main.scss */
+.aquamarine-button:active {
+  background-color: #167368;
 }
 
 @media (max-width: 750px) {
-  /* line 94, ../Sass/Main.scss */
+  /* line 129, ../Sass/Main.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 15px 8.45411%;
   }
-  /* line 102, ../Sass/Main.scss */
+  /* line 137, ../Sass/Main.scss */
   .greeting div:last-of-type::before, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 108, ../Sass/Main.scss */
+  /* line 143, ../Sass/Main.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
@@ -117,4 +143,36 @@ body {
   src: url("../Fonts/SourceSansPro.eot");
   src: url("../Fonts/SourceSansPro.eot?#iefix") format("embedded-opentype"), url("../Fonts/SourceSansPro.woff2") format("woff2"), url("../Fonts/SourceSansPro.woff") format("woff"), url("../Fonts/SourceSansPro.ttf") format("truetype"), url("../Fonts/SourceSansPro.svg#bebas_neuelight") format("svg");
   font-weight: 300;
+}
+/* Outline Out */
+/* line 189, ../Sass/Main.scss */
+.hvr-outline-out {
+  position: relative;
+}
+/* line 192, ../Sass/Main.scss */
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+/* line 205, ../Sass/Main.scss */
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+  border-color: #47e0cd;
+  border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: -webkit-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: linear-gradient(135deg, #47e0cd 0%, #2dcebb 100%);
+  border-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47e0cd', endColorstr='#2dcebb',GradientType=1 );
+  border-style: solid;
+  border-width: 3.5px;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
 }
