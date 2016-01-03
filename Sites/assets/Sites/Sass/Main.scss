@@ -53,19 +53,25 @@ $greeting-border-width: 17.5px;
     }
 
     &::before {
-      left: 0;
+      // There are 1px lines
+      // in some browsers at 0
+        left: -1%;
     }
 
     &::after {
-      right: 0;
+      // There are 1px lines
+      // in some browsers at 0
+      right: -1%;
     }
 
     h1 {
       font-size: 4em;
       letter-spacing: 5px;
       margin-left: 1.5%; // Pixel perfection
-      position: relative;
-      top: -50px / 286px * 100%;
+      position: absolute;
+      top: -7.5%;
+      left: 0;
+      right: 0;
       z-index: 1;
     }
 
@@ -76,6 +82,14 @@ $greeting-border-width: 17.5px;
         size: 3em;
         weight: 300;
       }
+      position: relative;
+      top: 35%;
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      top: 50%;
     }
   }
 }
@@ -101,7 +115,7 @@ $greeting-border-width: 17.5px;
   }
   letter-spacing: 0.25px;
   outline: none;
-  padding: 15px 30px;
+  padding: 12.5px 27.5px;
   text-transform: uppercase;
   transition: all 150ms;
 
@@ -126,13 +140,23 @@ $greeting-border-width: 17.5px;
   // Greeting
   $thin-greeting-border-width: 12.5px;
   .greeting {
+    .image-holder {
+      // Should cover full height
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
     div:last-of-type {
       border: {
         right: $thin-greeting-border-width solid white;
         bottom: $thin-greeting-border-width solid white;
         left: $thin-greeting-border-width solid white;
       }
-      padding: 15px (35px / 414px * 100%);
+      padding: (15px / 638px * 100%) (35px / 414px * 100%);
+      min-height: 17.5rem;
 
       &::before,
       &::after {
@@ -144,7 +168,15 @@ $greeting-border-width: 17.5px;
         font-size: 2.5em;
         margin-left: 1%; // Pixel perfection
         letter-spacing: 2.5px;
-        top: -30px / 251px * 100%;
+        top: -5%;
+      }
+
+      h4 {
+        top: 15%;
+      }
+
+      button {
+        top: 27.5%;
       }
     }
   }
