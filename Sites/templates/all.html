@@ -11,12 +11,13 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Reset.css' %}">
     <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Main.css' %}">
+    <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Sites.css' %}">
   </head>
   <body>
     <div class="container">
       <div class="greeting">
         <div class="image-holder">
-          <img src="{% static 'Sites/images/NoahRosenfield.jpg' %}">
+          <img src="{% static 'Sites/Images/NoahRosenfield.jpg' %}">
         </div> <!-- .image-holder -->
         <div class="white-overlay">
         </div> <!-- .white-overlay -->
@@ -30,11 +31,13 @@
       <div class="sites">
         {% for site in sites %}
           <div class="site">
-            <a href="{{ site.link }}">
-              <h4>{{ site.title }} <span>{{ site.subtitle }}</span></h4>
-              <p>{{ site.description }}</p>
-            </a>
             <img src="{% static 'Sites/Thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
+            <div>
+              <a href="{{ site.link }}">
+                <h4>{{ site.title }} <span>{{ site.subtitle }}</span></h4>
+                <p>{{ site.description }}</p>
+              </a>
+            </div>
           </div> <!-- .site -->
         {% endfor %}
       </div> <!-- .sites -->

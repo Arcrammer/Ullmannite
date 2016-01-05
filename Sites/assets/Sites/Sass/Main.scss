@@ -1,5 +1,7 @@
+// Variables
 $white: #f8f8ff;
 
+// Structure
 body {
   background-color: $white;
   font-family: 'Bebas Neue';
@@ -40,6 +42,7 @@ $greeting-border-width: 17.5px;
     }
     height: 40%;
     margin: auto;
+    min-height: 17.5rem;
     width: 60%;
 
     &::before,
@@ -156,7 +159,6 @@ $greeting-border-width: 17.5px;
         left: $thin-greeting-border-width solid white;
       }
       padding: (15px / 638px * 100%) (35px / 414px * 100%);
-      min-height: 17.5rem;
 
       &::before,
       &::after {
@@ -178,6 +180,15 @@ $greeting-border-width: 17.5px;
       button {
         top: 27.5%;
       }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .greeting {
+    div:last-of-type {
+      padding: 1%;
+      width: 80%;
     }
   }
 }
