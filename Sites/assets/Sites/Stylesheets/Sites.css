@@ -222,6 +222,11 @@ footer img {
   margin-left: 10%;
 }
 /* line 149, ../Sass/Sites.scss */
+.sites .site.loner:last-of-type {
+  clear: both;
+  margin-left: 30%;
+}
+/* line 154, ../Sass/Sites.scss */
 .sites .site .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, #4cc3c4 0%, #2e999b 100%);
@@ -229,14 +234,14 @@ footer img {
   background: linear-gradient(135deg, #4cc3c4 0%, #2e999b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
 }
-/* line 157, ../Sass/Sites.scss */
+/* line 162, ../Sass/Sites.scss */
 .sites .site a:link,
 .sites .site a:visited {
   color: #f8f8ff;
   display: block;
   text-decoration: none;
 }
-/* line 164, ../Sass/Sites.scss */
+/* line 169, ../Sass/Sites.scss */
 .sites .site div {
   padding: 10%;
   position: absolute;
@@ -247,19 +252,19 @@ footer img {
   text-align: center;
   transition: all 125ms;
 }
-/* line 174, ../Sass/Sites.scss */
+/* line 179, ../Sass/Sites.scss */
 .sites .site div h4,
 .sites .site div img,
 .sites .site div p {
   transition: all 125ms;
 }
-/* line 180, ../Sass/Sites.scss */
+/* line 185, ../Sass/Sites.scss */
 .sites .site div h4,
 .sites .site div p {
   font-weight: 600;
   line-height: 135%;
 }
-/* line 186, ../Sass/Sites.scss */
+/* line 191, ../Sass/Sites.scss */
 .sites .site div h4 {
   font-family: "Nexa";
   font-size: 2.5em;
@@ -271,7 +276,7 @@ footer img {
   left: 0;
   text-transform: uppercase;
 }
-/* line 200, ../Sass/Sites.scss */
+/* line 205, ../Sass/Sites.scss */
 .sites .site div img {
   position: absolute;
   top: 45%;
@@ -280,7 +285,7 @@ footer img {
   left: 35%;
   width: 30%;
 }
-/* line 209, ../Sass/Sites.scss */
+/* line 214, ../Sass/Sites.scss */
 .sites .site div p {
   font-family: "Source Sans Pro";
   font-size: 1.575em;
@@ -291,7 +296,7 @@ footer img {
   left: 12.5%;
   width: 75%;
 }
-/* line 224, ../Sass/Sites.scss */
+/* line 229, ../Sass/Sites.scss */
 .sites .site:hover .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
@@ -300,7 +305,7 @@ footer img {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
   transition: all 125ms;
 }
-/* line 234, ../Sass/Sites.scss */
+/* line 239, ../Sass/Sites.scss */
 .sites .site:hover div {
   margin: 2.5%;
   padding: 7.5%;
@@ -310,19 +315,19 @@ footer img {
   bottom: 0;
   left: 0;
 }
-/* line 243, ../Sass/Sites.scss */
+/* line 248, ../Sass/Sites.scss */
 .sites .site:hover div img {
   left: 34.5%;
   width: 31.25%;
 }
-/* line 248, ../Sass/Sites.scss */
+/* line 253, ../Sass/Sites.scss */
 .sites .site:hover div p {
   left: 7.5%;
   width: 85%;
 }
 
 @media (max-width: 750px) {
-  /* line 262, ../Sass/Sites.scss */
+  /* line 267, ../Sass/Sites.scss */
   .greeting .image-holder {
     position: absolute;
     top: 0;
@@ -330,36 +335,36 @@ footer img {
     bottom: 0;
     left: 0;
   }
-  /* line 271, ../Sass/Sites.scss */
+  /* line 276, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 279, ../Sass/Sites.scss */
+  /* line 284, ../Sass/Sites.scss */
   .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 285, ../Sass/Sites.scss */
+  /* line 290, ../Sass/Sites.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 292, ../Sass/Sites.scss */
+  /* line 297, ../Sass/Sites.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 296, ../Sass/Sites.scss */
+  /* line 301, ../Sass/Sites.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 }
 @media (max-width: 400px) {
-  /* line 305, ../Sass/Sites.scss */
+  /* line 310, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;

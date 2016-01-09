@@ -146,6 +146,11 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
       margin-left: 10%;
     }
 
+    &.loner:last-of-type {
+      clear: both;
+      margin-left: 30%;
+    }
+
     .overlay {
       background: rgb(76,195,196);
       background: -moz-linear-gradient(-45deg, $overlay-from-colour 0%, $overlay-to-colour 100%);
