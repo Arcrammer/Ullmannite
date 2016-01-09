@@ -322,8 +322,8 @@ footer img {
 }
 /* line 253, ../Sass/Sites.scss */
 .sites .site:hover div p {
-  left: 7.5%;
-  width: 85%;
+  left: 10.75%;
+  width: 78.75%;
 }
 
 @media (max-width: 750px) {

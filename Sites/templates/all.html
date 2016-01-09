@@ -30,8 +30,8 @@
       </div> <!-- .greeting -->
       <div class="sites">
         {% for site in sites %}
-          {% if last_site_is_loner %}
-            <div class="site loner">
+          {% if forloop.last %}
+            <div class="site {{ last_site_is_loner|yesno:'loner,' }}">
           {% else %}
             <div class="site">
           {% endif %}
