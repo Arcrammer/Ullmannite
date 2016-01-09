@@ -4,87 +4,7 @@ body {
   font-family: 'Bebas Neue';
 }
 
-/* line 12, ../Sass/Main.scss */
-.greeting {
-  overflow: hidden;
-  text-align: center;
-}
-/* line 16, ../Sass/Main.scss */
-.greeting .white-overlay {
-  background-color: rgba(255, 255, 255, 0.915);
-}
-/* line 20, ../Sass/Main.scss */
-.greeting .image-holder {
-  overflow: auto;
-}
-/* line 23, ../Sass/Main.scss */
-.greeting .image-holder img {
-  min-height: 100%;
-}
-/* line 28, ../Sass/Main.scss */
-.greeting .white-overlay,
-.greeting div:last-of-type {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-/* line 37, ../Sass/Main.scss */
-.greeting div:last-of-type {
-  border-right: 17.5px solid white;
-  border-bottom: 17.5px solid white;
-  border-left: 17.5px solid white;
-  height: 40%;
-  margin: auto;
-  min-height: 17.5rem;
-  width: 60%;
-}
-/* line 48, ../Sass/Main.scss */
-.greeting div:last-of-type::before, .greeting div:last-of-type::after {
-  background-color: white;
-  content: '';
-  height: 17.5px;
-  position: absolute;
-  top: 0;
-  width: 12.13592%;
-}
-/* line 58, ../Sass/Main.scss */
-.greeting div:last-of-type::before {
-  left: -1%;
-}
-/* line 64, ../Sass/Main.scss */
-.greeting div:last-of-type::after {
-  right: -1%;
-}
-/* line 70, ../Sass/Main.scss */
-.greeting div:last-of-type h1 {
-  font-size: 4em;
-  letter-spacing: 5px;
-  margin-left: 1.5%;
-  position: absolute;
-  top: -7.5%;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-/* line 81, ../Sass/Main.scss */
-.greeting div:last-of-type h4 {
-  letter-spacing: 3.5px;
-  line-height: 115%;
-  font-size: 3em;
-  font-weight: 300;
-  position: relative;
-  top: 35%;
-}
-/* line 92, ../Sass/Main.scss */
-.greeting div:last-of-type button {
-  display: block;
-  margin: auto;
-  top: 50%;
-}
-
-/* line 101, ../Sass/Main.scss */
+/* line 11, ../Sass/Main.scss */
 .aquamarine-button {
   background-color: transparent;
   border-color: #47e0cd;
@@ -104,62 +24,28 @@ body {
   text-transform: uppercase;
   transition: all 150ms;
 }
-/* line 125, ../Sass/Main.scss */
+/* line 35, ../Sass/Main.scss */
 .aquamarine-button:hover, .aquamarine-button:active, .aquamarine-button:focus {
   background-color: #48e0ce;
   color: white;
   border-color: white;
   border-width: 2px;
 }
-/* line 136, ../Sass/Main.scss */
+/* line 46, ../Sass/Main.scss */
 .aquamarine-button:active {
   background-color: #167368;
 }
 
-@media (max-width: 750px) {
-  /* line 146, ../Sass/Main.scss */
-  .greeting .image-holder {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  /* line 155, ../Sass/Main.scss */
-  .greeting div:last-of-type {
-    border-right: 12.5px solid white;
-    border-bottom: 12.5px solid white;
-    border-left: 12.5px solid white;
-    padding: 2.3511% 8.45411%;
-  }
-  /* line 163, ../Sass/Main.scss */
-  .greeting div:last-of-type::before, .greeting div:last-of-type::after {
-    height: 12.5px;
-    width: 5.66343%;
-  }
-  /* line 169, ../Sass/Main.scss */
-  .greeting div:last-of-type h1 {
-    font-size: 2.5em;
-    margin-left: 1%;
-    letter-spacing: 2.5px;
-    top: -5%;
-  }
-  /* line 176, ../Sass/Main.scss */
-  .greeting div:last-of-type h4 {
-    top: 15%;
-  }
-  /* line 180, ../Sass/Main.scss */
-  .greeting div:last-of-type button {
-    top: 27.5%;
-  }
+/* line 52, ../Sass/Main.scss */
+footer {
+  margin: 15% auto 8.5%;
+  text-align: center;
 }
-@media (max-width: 400px) {
-  /* line 189, ../Sass/Main.scss */
-  .greeting div:last-of-type {
-    padding: 1%;
-    width: 80%;
-  }
+/* line 56, ../Sass/Main.scss */
+footer img {
+  width: 10%;
 }
+
 @font-face {
   font-family: 'Bebas Neue';
   src: url("../Fonts/BebasNeue-Light.eot");
@@ -179,11 +65,11 @@ body {
   font-weight: 300;
 }
 /* Outline Out */
-/* line 232, ../Sass/Main.scss */
+/* line 97, ../Sass/Main.scss */
 .hvr-outline-out {
   position: relative;
 }
-/* line 235, ../Sass/Main.scss */
+/* line 100, ../Sass/Main.scss */
 .hvr-outline-out:before {
   content: '';
   position: absolute;
@@ -196,7 +82,7 @@ body {
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-/* line 248, ../Sass/Main.scss */
+/* line 113, ../Sass/Main.scss */
 .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
   border-color: #47e0cd;
   border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);

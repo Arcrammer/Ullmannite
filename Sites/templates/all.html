@@ -31,17 +31,21 @@
       <div class="sites">
         {% for site in sites %}
           <div class="site">
-            <img src="{% static 'Sites/Thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
-            <div>
-              <a href="{{ site.link }}">
-                <h4>{{ site.title }} <span>{{ site.subtitle }}</span></h4>
-                <p>{{ site.description }}</p>
-              </a>
-            </div>
+            <a href="{{ site.link }}">
+              <div class="overlay"></div> <!-- .overlay -->
+              <img src="{% static 'Sites/Thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
+              <div>
+                  <h4>{{ site.title }}</h4>
+                  <img src="{% static 'Sites/Images/Separator.png' %}" alt="Separator.png" />
+                  <p>{{ site.description }}</p>
+              </div>
+            </a>
           </div> <!-- .site -->
         {% endfor %}
       </div> <!-- .sites -->
-      <img src="Logo.png" alt="Logo.png">
+      <footer>
+        <img src="{% static 'Sites/Images/Logo.png' %}" alt="Logo.png">
+      </footer>
 
       <!-- Scripts -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
