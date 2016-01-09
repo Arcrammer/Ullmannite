@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/assets/'
 
-STATIC_ROOT = '/var/www/Ullmannite/public'
+STATIC_ROOT = '/var/www/Ullmannite-Staging/public'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'Sites/assets')
