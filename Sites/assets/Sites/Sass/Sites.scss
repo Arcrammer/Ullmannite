@@ -146,7 +146,7 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
       margin-left: 10%;
     }
 
-    &.loner:last-of-type {
+    &.loner {
       clear: both;
       margin-left: 30%;
     }
@@ -302,6 +302,28 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
         top: 27.5%;
       }
     }
+  }
+
+  // Sites
+  .sites {
+    .site {
+      margin: 0 !important;
+      margin-left: 5% !important;
+      width: 90%;
+
+      &:first-of-type {
+        margin-top: -35% !important;
+      }
+
+      &:last-of-type {
+        margin-bottom: -35% !important;
+      }
+    }
+  }
+
+  footer img {
+    margin-top: 10% !important;
+    width: 20%;
   }
 }
 

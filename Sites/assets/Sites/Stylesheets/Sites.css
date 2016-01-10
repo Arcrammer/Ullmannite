@@ -222,7 +222,7 @@ footer img {
   margin-left: 10%;
 }
 /* line 149, ../Sass/Sites.scss */
-.sites .site.loner:last-of-type {
+.sites .site.loner {
   clear: both;
   margin-left: 30%;
 }
@@ -362,9 +362,30 @@ footer img {
   .greeting div:last-of-type button {
     top: 27.5%;
   }
+
+  /* line 309, ../Sass/Sites.scss */
+  .sites .site {
+    margin: 0 !important;
+    margin-left: 5% !important;
+    width: 90%;
+  }
+  /* line 314, ../Sass/Sites.scss */
+  .sites .site:first-of-type {
+    margin-top: -35% !important;
+  }
+  /* line 318, ../Sass/Sites.scss */
+  .sites .site:last-of-type {
+    margin-bottom: -35% !important;
+  }
+
+  /* line 324, ../Sass/Sites.scss */
+  footer img {
+    margin-top: 10% !important;
+    width: 20%;
+  }
 }
 @media (max-width: 400px) {
-  /* line 310, ../Sass/Sites.scss */
+  /* line 332, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;
