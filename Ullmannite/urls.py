@@ -16,12 +16,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from Sites import views
 
 urlpatterns = [
     # CMS
     url(r'^admin/', admin.site.urls),
 
     # Sites
-    url(r'', views.all, name='all'),
+    url(r'', include('Sites.urls')),
 ]
