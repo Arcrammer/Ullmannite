@@ -96,6 +96,24 @@ body {
   font-family: 'Bebas Neue';
 }
 
+/* line 14, ../Sass/Main.scss */
+.close-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 50px;
+  margin: 2.5%;
+  padding: 0;
+  width: 50px;
+}
+/* line 23, ../Sass/Main.scss */
+.close-button span {
+  color: #f8f8ff;
+  font-size: 7em;
+  font-weight: 300;
+  line-height: 50%;
+}
+
 /* line 8, ../Sass/Sites.scss */
 .greeting {
   overflow: hidden;
@@ -325,8 +343,20 @@ body {
   width: 78.75%;
 }
 
+/* line 263, ../Sass/Sites.scss */
+.message-sender {
+  background-color: mediumslateblue;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
 @media (max-width: 750px) {
-  /* line 267, ../Sass/Sites.scss */
+  /* line 279, ../Sass/Sites.scss */
   .greeting .image-holder {
     position: absolute;
     top: 0;
@@ -334,57 +364,57 @@ body {
     bottom: 0;
     left: 0;
   }
-  /* line 276, ../Sass/Sites.scss */
+  /* line 288, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 284, ../Sass/Sites.scss */
+  /* line 296, ../Sass/Sites.scss */
   .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 290, ../Sass/Sites.scss */
+  /* line 302, ../Sass/Sites.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 297, ../Sass/Sites.scss */
+  /* line 309, ../Sass/Sites.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 301, ../Sass/Sites.scss */
+  /* line 313, ../Sass/Sites.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 
-  /* line 309, ../Sass/Sites.scss */
+  /* line 321, ../Sass/Sites.scss */
   .sites .site {
     margin: 0 !important;
     margin-left: 5% !important;
     width: 90%;
   }
-  /* line 314, ../Sass/Sites.scss */
+  /* line 326, ../Sass/Sites.scss */
   .sites .site:first-of-type {
     margin-top: -35% !important;
   }
-  /* line 318, ../Sass/Sites.scss */
+  /* line 330, ../Sass/Sites.scss */
   .sites .site:last-of-type {
     margin-bottom: -35% !important;
   }
 
-  /* line 324, ../Sass/Sites.scss */
+  /* line 336, ../Sass/Sites.scss */
   footer img {
     margin-top: 10% !important;
     width: 20%;
   }
 }
 @media (max-width: 400px) {
-  /* line 332, ../Sass/Sites.scss */
+  /* line 344, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;

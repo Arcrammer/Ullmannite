@@ -9,3 +9,23 @@ body {
   background-color: $white;
   font-family: 'Bebas Neue';
 }
+
+// Components
+.close-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 50px;
+  margin: 2.5%;
+  padding: 0;
+  width: 50px;
+
+  span {
+    color: $white;
+    font: {
+      size: 7em;
+      weight: 300;
+    }
+    line-height: 50%;
+  }
+}

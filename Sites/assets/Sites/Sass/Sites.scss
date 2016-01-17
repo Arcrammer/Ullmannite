@@ -259,6 +259,18 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
   }
 }
 
+// Message Sender
+.message-sender {
+  background-color: mediumslateblue;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
 // Responsiveness
 @media (max-width: 750px) {
   // Greeting
