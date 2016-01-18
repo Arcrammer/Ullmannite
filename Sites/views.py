@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.views.decorators.http import require_GET, require_POST
 from Sites import models
 
+@require_GET
 def all(request):
     sites = models.Site.objects.all()
     last_site_is_loner = (models.Site.objects.count() % 2 != 0)

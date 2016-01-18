@@ -9,8 +9,8 @@ gulp.task('default', function () {
   exec('$HOME/.nvm/nvm.sh use 5 && browser-sync start --config=bs-config.js');
 
   // Watch and compile Sass
-  exec('rvm use 2.2.4 && compass watch Sites/assets');
+  exec('rvm use 2.2.4 && compass watch Sites/assets/');
 
   // Watch and compile CoffeeScript
-  exec('coffee -cw Sites/assets');
+  exec('coffee -cw Sites/assets/');
 });

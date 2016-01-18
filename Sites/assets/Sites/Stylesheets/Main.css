@@ -101,14 +101,15 @@ body {
   background: transparent;
   border: 0;
   cursor: pointer;
+  float: left;
   height: 50px;
   margin: 2.5%;
   padding: 0;
   width: 50px;
 }
-/* line 23, ../Sass/Main.scss */
+/* line 24, ../Sass/Main.scss */
 .close-button span {
-  color: #f8f8ff;
+  color: #252525;
   font-size: 7em;
   font-weight: 300;
   line-height: 50%;

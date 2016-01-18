@@ -52,9 +52,11 @@
           <span>&times;</span>
         </button>
         <form method="post">
-          <input type="text" name="name">
-          <input type="text" name="email">
-          <textarea name="message"></textarea>
+          {% csrf_token %}
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input type="submit" class="aquamarine-button" value="Send">
         </form>
       </div> <!-- .viewport-overlay .message-sender -->
       <footer>

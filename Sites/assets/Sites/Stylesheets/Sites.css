@@ -101,37 +101,38 @@ body {
   background: transparent;
   border: 0;
   cursor: pointer;
+  float: left;
   height: 50px;
   margin: 2.5%;
   padding: 0;
   width: 50px;
 }
-/* line 23, ../Sass/Main.scss */
+/* line 24, ../Sass/Main.scss */
 .close-button span {
-  color: #f8f8ff;
+  color: #252525;
   font-size: 7em;
   font-weight: 300;
   line-height: 50%;
 }
 
-/* line 8, ../Sass/Sites.scss */
+/* line 5, ../Sass/Sites.scss */
 .greeting {
   overflow: hidden;
   text-align: center;
 }
-/* line 12, ../Sass/Sites.scss */
+/* line 9, ../Sass/Sites.scss */
 .greeting .white-overlay {
   background-color: rgba(255, 255, 255, 0.915);
 }
-/* line 16, ../Sass/Sites.scss */
+/* line 13, ../Sass/Sites.scss */
 .greeting .image-holder {
   overflow: auto;
 }
-/* line 19, ../Sass/Sites.scss */
+/* line 16, ../Sass/Sites.scss */
 .greeting .image-holder img {
   min-height: 100%;
 }
-/* line 24, ../Sass/Sites.scss */
+/* line 21, ../Sass/Sites.scss */
 .greeting .white-overlay,
 .greeting div:last-of-type {
   position: absolute;
@@ -140,7 +141,7 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 33, ../Sass/Sites.scss */
+/* line 30, ../Sass/Sites.scss */
 .greeting div:last-of-type {
   border-right: 17.5px solid white;
   border-bottom: 17.5px solid white;
@@ -150,7 +151,7 @@ body {
   min-height: 17.5rem;
   width: 60%;
 }
-/* line 44, ../Sass/Sites.scss */
+/* line 41, ../Sass/Sites.scss */
 .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
   background-color: white;
   content: '';
@@ -159,15 +160,15 @@ body {
   top: 0;
   width: 12.13592%;
 }
-/* line 54, ../Sass/Sites.scss */
+/* line 51, ../Sass/Sites.scss */
 .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after {
   left: -1%;
 }
-/* line 60, ../Sass/Sites.scss */
+/* line 57, ../Sass/Sites.scss */
 .greeting div:last-of-type::after {
   right: -1%;
 }
-/* line 66, ../Sass/Sites.scss */
+/* line 63, ../Sass/Sites.scss */
 .greeting div:last-of-type h1 {
   font-size: 4em;
   letter-spacing: 5px;
@@ -178,7 +179,7 @@ body {
   right: 0;
   z-index: 1;
 }
-/* line 77, ../Sass/Sites.scss */
+/* line 74, ../Sass/Sites.scss */
 .greeting div:last-of-type h4 {
   letter-spacing: 3.5px;
   line-height: 115%;
@@ -187,19 +188,19 @@ body {
   position: relative;
   top: 35%;
 }
-/* line 88, ../Sass/Sites.scss */
+/* line 85, ../Sass/Sites.scss */
 .greeting div:last-of-type button {
   display: block;
   margin: auto;
   top: 50%;
 }
 
-/* line 101, ../Sass/Sites.scss */
+/* line 98, ../Sass/Sites.scss */
 .sites {
   background-color: #252525;
   overflow: visible;
 }
-/* line 105, ../Sass/Sites.scss */
+/* line 102, ../Sass/Sites.scss */
 .sites::before, .sites::after {
   background: -moz-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
   background: -webkit-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
@@ -209,7 +210,7 @@ body {
   display: block;
   height: 100px;
 }
-/* line 116, ../Sass/Sites.scss */
+/* line 113, ../Sass/Sites.scss */
 .sites::after {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0) 0, black 100%);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0), black 100%);
@@ -217,7 +218,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000',GradientType=0);
   clear: left;
 }
-/* line 127, ../Sass/Sites.scss */
+/* line 124, ../Sass/Sites.scss */
 .sites .site {
   float: left;
   max-height: 410px;
@@ -226,24 +227,24 @@ body {
   width: 40%;
   transition: all 125ms;
 }
-/* line 135, ../Sass/Sites.scss */
+/* line 132, ../Sass/Sites.scss */
 .sites .site:nth-of-type(1), .sites .site:nth-of-type(2) {
   margin-top: -15%;
 }
-/* line 140, ../Sass/Sites.scss */
+/* line 137, ../Sass/Sites.scss */
 .sites .site:last-child, .sites .site:nth-last-child(2) {
   margin-bottom: -15%;
 }
-/* line 145, ../Sass/Sites.scss */
+/* line 142, ../Sass/Sites.scss */
 .sites .site:nth-child(2n-1) {
   margin-left: 10%;
 }
-/* line 149, ../Sass/Sites.scss */
+/* line 146, ../Sass/Sites.scss */
 .sites .site.loner {
   clear: both;
   margin-left: 30%;
 }
-/* line 154, ../Sass/Sites.scss */
+/* line 151, ../Sass/Sites.scss */
 .sites .site .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, #4cc3c4 0%, #2e999b 100%);
@@ -251,14 +252,14 @@ body {
   background: linear-gradient(135deg, #4cc3c4 0%, #2e999b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
 }
-/* line 162, ../Sass/Sites.scss */
+/* line 159, ../Sass/Sites.scss */
 .sites .site a:link,
 .sites .site a:visited {
   color: #f8f8ff;
   display: block;
   text-decoration: none;
 }
-/* line 169, ../Sass/Sites.scss */
+/* line 166, ../Sass/Sites.scss */
 .sites .site div {
   padding: 10%;
   position: absolute;
@@ -269,19 +270,19 @@ body {
   text-align: center;
   transition: all 125ms;
 }
-/* line 179, ../Sass/Sites.scss */
+/* line 176, ../Sass/Sites.scss */
 .sites .site div h4,
 .sites .site div img,
 .sites .site div p {
   transition: all 125ms;
 }
-/* line 185, ../Sass/Sites.scss */
+/* line 182, ../Sass/Sites.scss */
 .sites .site div h4,
 .sites .site div p {
   font-weight: 600;
   line-height: 135%;
 }
-/* line 191, ../Sass/Sites.scss */
+/* line 188, ../Sass/Sites.scss */
 .sites .site div h4 {
   font-family: "Nexa";
   font-size: 2.5em;
@@ -293,7 +294,7 @@ body {
   left: 0;
   text-transform: uppercase;
 }
-/* line 205, ../Sass/Sites.scss */
+/* line 202, ../Sass/Sites.scss */
 .sites .site div img {
   position: absolute;
   top: 45%;
@@ -302,7 +303,7 @@ body {
   left: 35%;
   width: 30%;
 }
-/* line 214, ../Sass/Sites.scss */
+/* line 211, ../Sass/Sites.scss */
 .sites .site div p {
   font-family: "Source Sans Pro";
   font-size: 1.575em;
@@ -313,7 +314,7 @@ body {
   left: 12.5%;
   width: 75%;
 }
-/* line 229, ../Sass/Sites.scss */
+/* line 226, ../Sass/Sites.scss */
 .sites .site:hover .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
@@ -322,7 +323,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
   transition: all 125ms;
 }
-/* line 239, ../Sass/Sites.scss */
+/* line 236, ../Sass/Sites.scss */
 .sites .site:hover div {
   margin: 2.5%;
   padding: 7.5%;
@@ -332,20 +333,20 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 248, ../Sass/Sites.scss */
+/* line 245, ../Sass/Sites.scss */
 .sites .site:hover div img {
   left: 34.5%;
   width: 31.25%;
 }
-/* line 253, ../Sass/Sites.scss */
+/* line 250, ../Sass/Sites.scss */
 .sites .site:hover div p {
   left: 10.75%;
   width: 78.75%;
 }
 
-/* line 263, ../Sass/Sites.scss */
+/* line 260, ../Sass/Sites.scss */
 .message-sender {
-  background-color: mediumslateblue;
+  background: rgba(248, 248, 255, 0.985);
   display: none;
   position: fixed;
   top: 0;
@@ -354,9 +355,56 @@ body {
   left: 0;
   z-index: 1;
 }
+/* line 270, ../Sass/Sites.scss */
+.message-sender form {
+  margin: auto;
+  overflow: auto;
+  position: absolute;
+  top: 2.5%;
+  right: 0;
+  bottom: 2.5%;
+  left: 0;
+  text-align: center;
+  width: 35%;
+}
+/* line 282, ../Sass/Sites.scss */
+.message-sender input[type="submit"] {
+  width: 40%;
+}
+/* line 286, ../Sass/Sites.scss */
+.message-sender input:not([type="submit"]),
+.message-sender textarea {
+  background-color: transparent;
+  border-width: 0;
+  border-bottom: 2px solid #222;
+  color: #505050;
+  font-family: "Source Sans Pro";
+  font-size: 1.5em;
+  letter-spacing: 0.015rem;
+  margin: 10% auto;
+  margin-left: 0;
+  outline: none;
+  padding: 5% 15%;
+  width: 68%;
+}
+/* line 305, ../Sass/Sites.scss */
+.message-sender input:not([type="submit"]):focus,
+.message-sender textarea:focus {
+  background-color: #f2f2f9;
+  border: 0.2rem solid #d8d8de;
+  transition: border-style 75ms;
+}
+/* line 315, ../Sass/Sites.scss */
+.message-sender textarea {
+  height: 150px;
+  font-size: 1.35em;
+  line-height: 175%;
+  letter-spacing: 0.005rem;
+  resize: none;
+}
 
 @media (max-width: 750px) {
-  /* line 279, ../Sass/Sites.scss */
+  /* line 329, ../Sass/Sites.scss */
   .greeting .image-holder {
     position: absolute;
     top: 0;
@@ -364,57 +412,64 @@ body {
     bottom: 0;
     left: 0;
   }
-  /* line 288, ../Sass/Sites.scss */
+  /* line 338, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 296, ../Sass/Sites.scss */
+  /* line 346, ../Sass/Sites.scss */
   .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 302, ../Sass/Sites.scss */
+  /* line 352, ../Sass/Sites.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 309, ../Sass/Sites.scss */
+  /* line 359, ../Sass/Sites.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 313, ../Sass/Sites.scss */
+  /* line 363, ../Sass/Sites.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 
-  /* line 321, ../Sass/Sites.scss */
+  /* line 371, ../Sass/Sites.scss */
   .sites .site {
     margin: 0 !important;
     margin-left: 5% !important;
     width: 90%;
   }
-  /* line 326, ../Sass/Sites.scss */
+  /* line 376, ../Sass/Sites.scss */
   .sites .site:first-of-type {
     margin-top: -35% !important;
   }
-  /* line 330, ../Sass/Sites.scss */
+  /* line 380, ../Sass/Sites.scss */
   .sites .site:last-of-type {
     margin-bottom: -35% !important;
   }
 
-  /* line 336, ../Sass/Sites.scss */
+  /* line 388, ../Sass/Sites.scss */
+  .message-sender form {
+    top: 6.5%;
+    bottom: 6.5%;
+    width: 80%;
+  }
+
+  /* line 395, ../Sass/Sites.scss */
   footer img {
     margin-top: 10% !important;
     width: 20%;
   }
 }
 @media (max-width: 400px) {
-  /* line 344, ../Sass/Sites.scss */
+  /* line 403, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;

@@ -1,8 +1,5 @@
 @import "Main";
 
-// Variables
-$dark-grey: #252525;
-
 // Greeting
 $greeting-border-width: 17.5px;
 .greeting {
@@ -261,7 +258,7 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
 
 // Message Sender
 .message-sender {
-  background-color: mediumslateblue;
+  background: rgba($white, 0.985);
   display: none;
   position: fixed;
   top: 0;
@@ -269,6 +266,59 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
   bottom: 0;
   left: 0;
   z-index: 1;
+
+  form {
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 2.5%;
+    right: 0;
+    bottom: 2.5%;
+    left: 0;
+    text-align: center;
+    width: 35%;
+  }
+
+  input[type="submit"] {
+    width: 40%;
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    background-color: transparent;
+    border: {
+      width: 0;
+      bottom: 2px solid #222;
+    }
+    color: $dark-grey * 2.15;
+    font: {
+      family: "Source Sans Pro";
+      size: 1.5em;
+    }
+    letter-spacing: 0.015rem;
+    margin: 10% auto;
+    margin-left: 0;
+    outline: none;
+    padding: 5% 15%;
+    width: 68%;
+
+    &:focus {
+      background-color: $white / 1.025;
+      border: 0.2rem solid $white / 1.15;
+
+      // Animating 'border' causes transition issues
+      // in Safari and Chrome (and probably others)
+      transition: border-style 75ms;
+    }
+  }
+
+  textarea {
+    height: 150px;
+    font-size: 1.35em;
+    line-height: 175%;
+    letter-spacing: 0.005rem;
+    resize: none;
+  }
 }
 
 // Responsiveness
@@ -330,6 +380,15 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
       &:last-of-type {
         margin-bottom: -35% !important;
       }
+    }
+  }
+
+  // Message Sender
+  .message-sender {
+    form {
+      top: 6.5%;
+      bottom: 6.5%;
+      width: 80%;
     }
   }
 

@@ -15,13 +15,14 @@ body {
   background: transparent;
   border: 0;
   cursor: pointer;
+  float: left;
   height: 50px;
   margin: 2.5%;
   padding: 0;
   width: 50px;
 
   span {
-    color: $white;
+    color: $dark-grey;
     font: {
       size: 7em;
       weight: 300;
