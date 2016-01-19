@@ -83,8 +83,7 @@
             {% if say_hello_form.message.errors %}
               class="has-probs"
             {% endif %}
-            value="{{ say_hello_form.cleaned_data.message }}"
-          ></textarea>
+          >{{ say_hello_form.cleaned_data.message }}</textarea>
           <input type="submit" class="aquamarine-button" value="Send">
         </form>
       </div> <!-- .viewport-overlay .message-sender -->
@@ -93,6 +92,13 @@
       </footer>
 
       <!-- Scripts -->
+      <script>
+        {% if say_hello_form_needs_display %}
+          var say_hello_form_needs_display = true;
+        {% else %}
+          var say_hello_form_needs_display = false;
+        {% endif %}
+      </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="{% static 'Sites/Scripts/Main.js' %}"></script>
     </div> <!-- .container -->

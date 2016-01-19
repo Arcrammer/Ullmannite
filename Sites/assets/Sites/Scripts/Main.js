@@ -8,13 +8,16 @@
       $('body').css('overflow', 'hidden');
       return $('.message-sender').css('display', 'block');
     });
-    return $('.close-button span, .viewport-overlay').click(function(e) {
+    $('.close-button span, .viewport-overlay').click(function(e) {
       e.stopPropagation();
       if (e.target === this) {
         $('body').css('overflow', 'visible');
         return $('.viewport-overlay').css('display', 'none');
       }
     });
+    if (say_hello_form_needs_display) {
+      return $('.say-hello-button').click();
+    }
   })(jQuery);
 
 }).call(this);

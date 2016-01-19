@@ -30,6 +30,7 @@ def all(request):
         else:
             # Form validation has failed
             view_data['say_hello_form'] = f
+            view_data['say_hello_form_needs_display'] = 1
             return render(request, 'all.html', view_data)
     else:
         # Return the sites page

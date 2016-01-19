@@ -16,4 +16,7 @@
       $('body').css 'overflow', 'visible'
       $('.viewport-overlay').css 'display', 'none'
 
+  if say_hello_form_needs_display
+    $('.say-hello-button').click()
+
 ) jQuery

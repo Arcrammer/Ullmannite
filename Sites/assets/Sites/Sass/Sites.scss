@@ -287,8 +287,12 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
     font-size: 1.15em;
     letter-spacing: 0.035rem;
     margin: {
-      top: 2.5%;
+      top: 12.5%;
       bottom: 5%;
+    }
+
+    &:first-of-type {
+      margin-top: 2.5%;
     }
   }
 

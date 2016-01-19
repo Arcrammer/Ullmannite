@@ -373,15 +373,19 @@ body {
 .message-sender .prob {
   font-size: 1.15em;
   letter-spacing: 0.035rem;
-  margin-top: 2.5%;
+  margin-top: 12.5%;
   margin-bottom: 5%;
 }
-/* line 295, ../Sass/Sites.scss */
+/* line 294, ../Sass/Sites.scss */
+.message-sender .prob:first-of-type {
+  margin-top: 2.5%;
+}
+/* line 299, ../Sass/Sites.scss */
 .message-sender input[type="submit"] {
   margin: 10% auto;
   width: 40%;
 }
-/* line 300, ../Sass/Sites.scss */
+/* line 304, ../Sass/Sites.scss */
 .message-sender input:not([type="submit"]),
 .message-sender textarea {
   background-color: transparent;
@@ -396,19 +400,19 @@ body {
   padding: 5% 15%;
   width: 68%;
 }
-/* line 318, ../Sass/Sites.scss */
+/* line 322, ../Sass/Sites.scss */
 .message-sender input:not([type="submit"]):focus,
 .message-sender textarea:focus {
   background-color: #f2f2f9;
   border: 0.2rem solid #d8d8de;
   transition: border-style 75ms;
 }
-/* line 327, ../Sass/Sites.scss */
+/* line 331, ../Sass/Sites.scss */
 .message-sender input:not([type="submit"]).has-probs,
 .message-sender textarea.has-probs {
   margin: 0 auto;
 }
-/* line 332, ../Sass/Sites.scss */
+/* line 336, ../Sass/Sites.scss */
 .message-sender textarea {
   height: 150px;
   font-size: 1.35em;
@@ -418,7 +422,7 @@ body {
 }
 
 @media (max-width: 750px) {
-  /* line 346, ../Sass/Sites.scss */
+  /* line 350, ../Sass/Sites.scss */
   .greeting .image-holder {
     position: absolute;
     top: 0;
@@ -426,64 +430,64 @@ body {
     bottom: 0;
     left: 0;
   }
-  /* line 355, ../Sass/Sites.scss */
+  /* line 359, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 363, ../Sass/Sites.scss */
+  /* line 367, ../Sass/Sites.scss */
   .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 369, ../Sass/Sites.scss */
+  /* line 373, ../Sass/Sites.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 376, ../Sass/Sites.scss */
+  /* line 380, ../Sass/Sites.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 380, ../Sass/Sites.scss */
+  /* line 384, ../Sass/Sites.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 
-  /* line 388, ../Sass/Sites.scss */
+  /* line 392, ../Sass/Sites.scss */
   .sites .site {
     margin: 0 !important;
     margin-left: 5% !important;
     width: 90%;
   }
-  /* line 393, ../Sass/Sites.scss */
+  /* line 397, ../Sass/Sites.scss */
   .sites .site:first-of-type {
     margin-top: -35% !important;
   }
-  /* line 397, ../Sass/Sites.scss */
+  /* line 401, ../Sass/Sites.scss */
   .sites .site:last-of-type {
     margin-bottom: -35% !important;
   }
 
-  /* line 405, ../Sass/Sites.scss */
+  /* line 409, ../Sass/Sites.scss */
   .message-sender form {
     top: 6.5%;
     bottom: 6.5%;
     width: 80%;
   }
 
-  /* line 412, ../Sass/Sites.scss */
+  /* line 416, ../Sass/Sites.scss */
   footer img {
     margin-top: 10% !important;
     width: 20%;
   }
 }
 @media (max-width: 400px) {
-  /* line 420, ../Sass/Sites.scss */
+  /* line 424, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;
