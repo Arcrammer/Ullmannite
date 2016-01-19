@@ -15,6 +15,9 @@
   </head>
   <body>
     <div class="container">
+      {% if hello_message_sent %}
+        <p class="banner blue">I'll see that soon. Thanks!</p>
+      {% endif %}
       <div class="greeting">
         <div class="image-holder">
           <img src="{% static 'Sites/Images/NoahRosenfield.jpg' %}">

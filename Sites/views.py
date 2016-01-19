@@ -25,8 +25,8 @@ def all(request):
             sent = send_mail(message_subject, visitors_message, visitors_email, [settings.EMAIL_HOST_USER])
             if sent:
                 # The message was sent
-                messages.success(request, 'I\'ll see that soon.')
-                return redirect('/')
+                view_data['hello_message_sent'] = True
+                return render(request, 'all.html', view_data)
         else:
             # Form validation has failed
             view_data['say_hello_form'] = f

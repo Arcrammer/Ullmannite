@@ -1,5 +1,24 @@
 @import "Main";
 
+// Banners
+.banner {
+  color: white;
+  font: {
+    size: 1.45em;
+    weight: 100;
+  }
+  padding: 1.5% 2.5%;
+  position: absolute;
+  left: 0;
+  letter-spacing: 0.125rem;
+  right: 0;
+  z-index: 1;
+
+  &.blue {
+    background-color: #2496ce;
+  }
+}
+
 // Greeting
 $greeting-border-width: 17.5px;
 .greeting {

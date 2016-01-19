@@ -115,24 +115,41 @@ body {
   line-height: 50%;
 }
 
-/* line 5, ../Sass/Sites.scss */
+/* line 4, ../Sass/Sites.scss */
+.banner {
+  color: white;
+  font-size: 1.45em;
+  font-weight: 100;
+  padding: 1.5% 2.5%;
+  position: absolute;
+  left: 0;
+  letter-spacing: 0.125rem;
+  right: 0;
+  z-index: 1;
+}
+/* line 17, ../Sass/Sites.scss */
+.banner.blue {
+  background-color: #2496ce;
+}
+
+/* line 24, ../Sass/Sites.scss */
 .greeting {
   overflow: hidden;
   text-align: center;
 }
-/* line 9, ../Sass/Sites.scss */
+/* line 28, ../Sass/Sites.scss */
 .greeting .white-overlay {
   background-color: rgba(255, 255, 255, 0.915);
 }
-/* line 13, ../Sass/Sites.scss */
+/* line 32, ../Sass/Sites.scss */
 .greeting .image-holder {
   overflow: auto;
 }
-/* line 16, ../Sass/Sites.scss */
+/* line 35, ../Sass/Sites.scss */
 .greeting .image-holder img {
   min-height: 100%;
 }
-/* line 21, ../Sass/Sites.scss */
+/* line 40, ../Sass/Sites.scss */
 .greeting .white-overlay,
 .greeting div:last-of-type {
   position: absolute;
@@ -141,7 +158,7 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 30, ../Sass/Sites.scss */
+/* line 49, ../Sass/Sites.scss */
 .greeting div:last-of-type {
   border-right: 17.5px solid white;
   border-bottom: 17.5px solid white;
@@ -151,7 +168,7 @@ body {
   min-height: 17.5rem;
   width: 60%;
 }
-/* line 41, ../Sass/Sites.scss */
+/* line 60, ../Sass/Sites.scss */
 .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
   background-color: white;
   content: '';
@@ -160,15 +177,15 @@ body {
   top: 0;
   width: 12.13592%;
 }
-/* line 51, ../Sass/Sites.scss */
+/* line 70, ../Sass/Sites.scss */
 .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after {
   left: -1%;
 }
-/* line 57, ../Sass/Sites.scss */
+/* line 76, ../Sass/Sites.scss */
 .greeting div:last-of-type::after {
   right: -1%;
 }
-/* line 63, ../Sass/Sites.scss */
+/* line 82, ../Sass/Sites.scss */
 .greeting div:last-of-type h1 {
   font-size: 4em;
   letter-spacing: 5px;
@@ -179,7 +196,7 @@ body {
   right: 0;
   z-index: 1;
 }
-/* line 74, ../Sass/Sites.scss */
+/* line 93, ../Sass/Sites.scss */
 .greeting div:last-of-type h4 {
   letter-spacing: 3.5px;
   line-height: 115%;
@@ -188,19 +205,19 @@ body {
   position: relative;
   top: 35%;
 }
-/* line 85, ../Sass/Sites.scss */
+/* line 104, ../Sass/Sites.scss */
 .greeting div:last-of-type button {
   display: block;
   margin: auto;
   top: 50%;
 }
 
-/* line 98, ../Sass/Sites.scss */
+/* line 117, ../Sass/Sites.scss */
 .sites {
   background-color: #252525;
   overflow: visible;
 }
-/* line 102, ../Sass/Sites.scss */
+/* line 121, ../Sass/Sites.scss */
 .sites::before, .sites::after {
   background: -moz-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
   background: -webkit-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
@@ -210,7 +227,7 @@ body {
   display: block;
   height: 100px;
 }
-/* line 113, ../Sass/Sites.scss */
+/* line 132, ../Sass/Sites.scss */
 .sites::after {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0) 0, black 100%);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0), black 100%);
@@ -218,7 +235,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000',GradientType=0);
   clear: left;
 }
-/* line 124, ../Sass/Sites.scss */
+/* line 143, ../Sass/Sites.scss */
 .sites .site {
   float: left;
   max-height: 410px;
@@ -227,24 +244,24 @@ body {
   width: 40%;
   transition: all 125ms;
 }
-/* line 132, ../Sass/Sites.scss */
+/* line 151, ../Sass/Sites.scss */
 .sites .site:nth-of-type(1), .sites .site:nth-of-type(2) {
   margin-top: -15%;
 }
-/* line 137, ../Sass/Sites.scss */
+/* line 156, ../Sass/Sites.scss */
 .sites .site:last-child, .sites .site:nth-last-child(2) {
   margin-bottom: -15%;
 }
-/* line 142, ../Sass/Sites.scss */
+/* line 161, ../Sass/Sites.scss */
 .sites .site:nth-child(2n-1) {
   margin-left: 10%;
 }
-/* line 146, ../Sass/Sites.scss */
+/* line 165, ../Sass/Sites.scss */
 .sites .site.loner {
   clear: both;
   margin-left: 30%;
 }
-/* line 151, ../Sass/Sites.scss */
+/* line 170, ../Sass/Sites.scss */
 .sites .site .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, #4cc3c4 0%, #2e999b 100%);
@@ -252,14 +269,14 @@ body {
   background: linear-gradient(135deg, #4cc3c4 0%, #2e999b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
 }
-/* line 159, ../Sass/Sites.scss */
+/* line 178, ../Sass/Sites.scss */
 .sites .site a:link,
 .sites .site a:visited {
   color: #f8f8ff;
   display: block;
   text-decoration: none;
 }
-/* line 166, ../Sass/Sites.scss */
+/* line 185, ../Sass/Sites.scss */
 .sites .site div {
   padding: 10%;
   position: absolute;
@@ -270,19 +287,19 @@ body {
   text-align: center;
   transition: all 125ms;
 }
-/* line 176, ../Sass/Sites.scss */
+/* line 195, ../Sass/Sites.scss */
 .sites .site div h4,
 .sites .site div img,
 .sites .site div p {
   transition: all 125ms;
 }
-/* line 182, ../Sass/Sites.scss */
+/* line 201, ../Sass/Sites.scss */
 .sites .site div h4,
 .sites .site div p {
   font-weight: 600;
   line-height: 135%;
 }
-/* line 188, ../Sass/Sites.scss */
+/* line 207, ../Sass/Sites.scss */
 .sites .site div h4 {
   font-family: "Nexa";
   font-size: 2.5em;
@@ -294,7 +311,7 @@ body {
   left: 0;
   text-transform: uppercase;
 }
-/* line 202, ../Sass/Sites.scss */
+/* line 221, ../Sass/Sites.scss */
 .sites .site div img {
   position: absolute;
   top: 45%;
@@ -303,7 +320,7 @@ body {
   left: 35%;
   width: 30%;
 }
-/* line 211, ../Sass/Sites.scss */
+/* line 230, ../Sass/Sites.scss */
 .sites .site div p {
   font-family: "Source Sans Pro";
   font-size: 1.575em;
@@ -314,7 +331,7 @@ body {
   left: 12.5%;
   width: 75%;
 }
-/* line 226, ../Sass/Sites.scss */
+/* line 245, ../Sass/Sites.scss */
 .sites .site:hover .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
@@ -323,7 +340,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
   transition: all 125ms;
 }
-/* line 236, ../Sass/Sites.scss */
+/* line 255, ../Sass/Sites.scss */
 .sites .site:hover div {
   margin: 2.5%;
   padding: 7.5%;
@@ -333,18 +350,18 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 245, ../Sass/Sites.scss */
+/* line 264, ../Sass/Sites.scss */
 .sites .site:hover div img {
   left: 34.5%;
   width: 31.25%;
 }
-/* line 250, ../Sass/Sites.scss */
+/* line 269, ../Sass/Sites.scss */
 .sites .site:hover div p {
   left: 10.75%;
   width: 78.75%;
 }
 
-/* line 260, ../Sass/Sites.scss */
+/* line 279, ../Sass/Sites.scss */
 .message-sender {
   background: rgba(248, 248, 255, 0.985);
   display: none;
@@ -355,7 +372,7 @@ body {
   left: 0;
   z-index: 1;
 }
-/* line 270, ../Sass/Sites.scss */
+/* line 289, ../Sass/Sites.scss */
 .message-sender form {
   margin: auto;
   overflow: auto;
@@ -369,23 +386,23 @@ body {
   text-align: center;
   width: 35%;
 }
-/* line 286, ../Sass/Sites.scss */
+/* line 305, ../Sass/Sites.scss */
 .message-sender .prob {
   font-size: 1.15em;
   letter-spacing: 0.035rem;
   margin-top: 12.5%;
   margin-bottom: 5%;
 }
-/* line 294, ../Sass/Sites.scss */
+/* line 313, ../Sass/Sites.scss */
 .message-sender .prob:first-of-type {
   margin-top: 2.5%;
 }
-/* line 299, ../Sass/Sites.scss */
+/* line 318, ../Sass/Sites.scss */
 .message-sender input[type="submit"] {
   margin: 10% auto;
   width: 40%;
 }
-/* line 304, ../Sass/Sites.scss */
+/* line 323, ../Sass/Sites.scss */
 .message-sender input:not([type="submit"]),
 .message-sender textarea {
   background-color: transparent;
@@ -400,19 +417,19 @@ body {
   padding: 5% 15%;
   width: 68%;
 }
-/* line 322, ../Sass/Sites.scss */
+/* line 341, ../Sass/Sites.scss */
 .message-sender input:not([type="submit"]):focus,
 .message-sender textarea:focus {
   background-color: #f2f2f9;
   border: 0.2rem solid #d8d8de;
   transition: border-style 75ms;
 }
-/* line 331, ../Sass/Sites.scss */
+/* line 350, ../Sass/Sites.scss */
 .message-sender input:not([type="submit"]).has-probs,
 .message-sender textarea.has-probs {
   margin: 0 auto;
 }
-/* line 336, ../Sass/Sites.scss */
+/* line 355, ../Sass/Sites.scss */
 .message-sender textarea {
   height: 150px;
   font-size: 1.35em;
@@ -422,7 +439,7 @@ body {
 }
 
 @media (max-width: 750px) {
-  /* line 350, ../Sass/Sites.scss */
+  /* line 369, ../Sass/Sites.scss */
   .greeting .image-holder {
     position: absolute;
     top: 0;
@@ -430,64 +447,64 @@ body {
     bottom: 0;
     left: 0;
   }
-  /* line 359, ../Sass/Sites.scss */
+  /* line 378, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 367, ../Sass/Sites.scss */
+  /* line 386, ../Sass/Sites.scss */
   .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 373, ../Sass/Sites.scss */
+  /* line 392, ../Sass/Sites.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 380, ../Sass/Sites.scss */
+  /* line 399, ../Sass/Sites.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 384, ../Sass/Sites.scss */
+  /* line 403, ../Sass/Sites.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 
-  /* line 392, ../Sass/Sites.scss */
+  /* line 411, ../Sass/Sites.scss */
   .sites .site {
     margin: 0 !important;
     margin-left: 5% !important;
     width: 90%;
   }
-  /* line 397, ../Sass/Sites.scss */
+  /* line 416, ../Sass/Sites.scss */
   .sites .site:first-of-type {
     margin-top: -35% !important;
   }
-  /* line 401, ../Sass/Sites.scss */
+  /* line 420, ../Sass/Sites.scss */
   .sites .site:last-of-type {
     margin-bottom: -35% !important;
   }
 
-  /* line 409, ../Sass/Sites.scss */
+  /* line 428, ../Sass/Sites.scss */
   .message-sender form {
     top: 6.5%;
     bottom: 6.5%;
     width: 80%;
   }
 
-  /* line 416, ../Sass/Sites.scss */
+  /* line 435, ../Sass/Sites.scss */
   footer img {
     margin-top: 10% !important;
     width: 20%;
   }
 }
 @media (max-width: 400px) {
-  /* line 424, ../Sass/Sites.scss */
+  /* line 443, ../Sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;
