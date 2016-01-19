@@ -271,15 +271,29 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
     margin: auto;
     overflow: auto;
     position: absolute;
-    top: 2.5%;
+    top: 0;
     right: 0;
-    bottom: 2.5%;
+    bottom: 0;
     left: 0;
+    padding: {
+      top: 2.5%;
+      bottom: 2.5%;
+    }
     text-align: center;
     width: 35%;
   }
 
+  .prob {
+    font-size: 1.15em;
+    letter-spacing: 0.035rem;
+    margin: {
+      top: 2.5%;
+      bottom: 5%;
+    }
+  }
+
   input[type="submit"] {
+    margin: 10% auto;
     width: 40%;
   }
 
@@ -297,7 +311,6 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
     }
     letter-spacing: 0.015rem;
     margin: 10% auto;
-    margin-left: 0;
     outline: none;
     padding: 5% 15%;
     width: 68%;
@@ -309,6 +322,10 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
       // Animating 'border' causes transition issues
       // in Safari and Chrome (and probably others)
       transition: border-style 75ms;
+    }
+
+    &.has-probs {
+      margin: 0 auto;
     }
   }
 

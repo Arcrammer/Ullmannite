@@ -1,14 +1,36 @@
-from django.shortcuts import render, redirect
+from . import models
+from .forms import SayHelloForm
+from django.conf import settings
+from django.contrib import messages
+from django.core.mail import send_mail
 from django.http import HttpResponse
-from django.views.decorators.http import require_GET, require_POST
-from Sites import models
+from django.shortcuts import render, redirect
 
-@require_GET
 def all(request):
+    # Data for the view in all circumstances
     sites = models.Site.objects.all()
     last_site_is_loner = (models.Site.objects.count() % 2 != 0)
     view_data = {
         'last_site_is_loner': last_site_is_loner,
         'sites': sites
     }
-    return render(request, 'all.html', view_data)
+    if request.method == 'POST':
+        f = SayHelloForm(request.POST)
+        if f.is_valid():
+            # Email their comment to Alexander
+            visitors_name = request.POST.get('name')
+            visitors_email = request.POST.get('email')
+            visitors_message = request.POST.get('message') + '\n\nFrom %(visitors_email)s.' % locals()
+            message_subject = 'Message from %(visitors_name)s at iAlexander.io' % locals()
+            sent = send_mail(message_subject, visitors_message, visitors_email, [settings.EMAIL_HOST_USER])
+            if sent:
+                # The message was sent
+                messages.success(request, 'I\'ll see that soon.')
+                return redirect('/')
+        else:
+            # Form validation has failed
+            view_data['say_hello_form'] = f
+            return render(request, 'all.html', view_data)
+    else:
+        # Return the sites page
+        return render(request, 'all.html', view_data)

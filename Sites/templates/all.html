@@ -21,7 +21,6 @@
         </div> <!-- .image-holder -->
         <div class="white-overlay">
         </div> <!-- .white-overlay -->
-
         <div>
           <h1>I am Alexander</h1>
           <h4>I make web applications</h4>
@@ -53,9 +52,36 @@
         </button>
         <form method="post">
           {% csrf_token %}
-          <input type="text" name="name" placeholder="Name">
-          <input type="text" name="email" placeholder="Email">
-          <textarea name="message" placeholder="Message"></textarea>
+          {% if say_hello_form.name.errors %}
+            <p class="prob">{{ say_hello_form.name.errors.0 }}</p>
+          {% endif %}
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            {% if say_hello_form.name.errors %}
+              class="has-probs"
+            {% endif %}>
+          {% if say_hello_form.email.errors %}
+            <p class="prob">{{ say_hello_form.email.errors.0 }}</p>
+          {% endif %}
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            {% if say_hello_form.email.errors %}
+              class="has-probs"
+            {% endif %}>
+          {% if say_hello_form.message.errors %}
+            <p class="prob">{{ say_hello_form.message.errors.0 }}</p>
+          {% endif %}
+          <textarea
+            name="message"
+            placeholder="Message"
+            {% if say_hello_form.message.errors %}
+              class="has-probs"
+            {% endif %}
+          ></textarea>
           <input type="submit" class="aquamarine-button" value="Send">
         </form>
       </div> <!-- .viewport-overlay .message-sender -->

@@ -1,3 +1,5 @@
 .DS_Store
 *.pyc
 Ullmannite/settings.py
+.sass-cache
+

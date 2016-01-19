@@ -8,6 +8,8 @@ sass_dir = "Sites/Sass"
 images_dir = "Sites/Images"
 javascripts_dir = "Sites/Scripts"
 
+sourcemap = true
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
