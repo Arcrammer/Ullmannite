@@ -61,7 +61,8 @@
             placeholder="Name"
             {% if say_hello_form.name.errors %}
               class="has-probs"
-            {% endif %}>
+            {% endif %}
+            value="{{ say_hello_form.cleaned_data.name }}">
           {% if say_hello_form.email.errors %}
             <p class="prob">{{ say_hello_form.email.errors.0 }}</p>
           {% endif %}
@@ -71,7 +72,8 @@
             placeholder="Email"
             {% if say_hello_form.email.errors %}
               class="has-probs"
-            {% endif %}>
+            {% endif %}
+            value="{{ say_hello_form.cleaned_data.email }}">
           {% if say_hello_form.message.errors %}
             <p class="prob">{{ say_hello_form.message.errors.0 }}</p>
           {% endif %}
@@ -81,6 +83,7 @@
             {% if say_hello_form.message.errors %}
               class="has-probs"
             {% endif %}
+            value="{{ say_hello_form.cleaned_data.message }}"
           ></textarea>
           <input type="submit" class="aquamarine-button" value="Send">
         </form>
