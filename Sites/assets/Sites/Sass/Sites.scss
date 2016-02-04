@@ -25,6 +25,15 @@ $greeting-border-width: 17.5px;
   overflow: hidden;
   text-align: center;
 
+  &.short {
+    // Inline styles can't be applied to
+    // pseudo-elements, but classes can
+    &::before,
+    &::after {
+      height: 600px;
+    }
+  }
+
   &::before {
     background: url('../Images/NoahRosenfield.jpg') no-repeat;
     background-size: cover;
@@ -81,7 +90,7 @@ $greeting-border-width: 17.5px;
     &::before {
       // There are 1px lines
       // in some browsers at 0
-        left: -1%;
+      left: -1%;
     }
 
     &::after {
