@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 
 def all(request):
     # Data for the view in all circumstances
-    sites = models.Site.objects.all()
+    sites = models.Site.objects.all().order_by('-precedence')
     last_site_is_loner = (models.Site.objects.count() % 2 != 0)
     view_data = {
         'last_site_is_loner': last_site_is_loner,
