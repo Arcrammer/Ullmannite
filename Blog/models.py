@@ -7,7 +7,7 @@ class Blog(models.Model):
     title = models.CharField(max_length=128)
     body = HTMLField()
     date_posted = models.DateTimeField(default=timezone.now)
-    last_edited = models.DateTimeField(auto_now=True)
+    last_edited = models.DateTimeField(null=True, auto_now_add=True)
 
 class BlogAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title', 'date_posted', 'last_edited')

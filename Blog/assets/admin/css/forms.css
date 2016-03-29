@@ -1,0 +1,8 @@
+/* TinyMCE */
+.mceLayout {
+  width: 75% !important;
+}
+
+#id_body_ifr {
+  height: 500px !important;
+}
