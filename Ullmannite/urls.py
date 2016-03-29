@@ -10,4 +10,5 @@ urlpatterns = [
 
     # Blog
     url(r'^blog', include('Blog.urls')),
+    url(r'^tinymce/', include('tinymce.urls')),
 ]
