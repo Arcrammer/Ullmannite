@@ -7,4 +7,7 @@ urlpatterns = [
 
     # Sites
     url(r'^', include('Sites.urls')),
+
+    # Blog
+    url(r'^blog', include('Blog.urls')),
 ]
