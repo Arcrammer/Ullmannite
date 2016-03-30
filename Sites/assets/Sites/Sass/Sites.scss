@@ -22,8 +22,11 @@
 // Greeting
 $greeting-border-width: 17.5px;
 .greeting {
+  background-color: black;
+  height: 768px;
   overflow: hidden;
   text-align: center;
+  transition: all 1500ms;
 
   &.short {
     // Inline styles can't be applied to
@@ -43,7 +46,7 @@ $greeting-border-width: 17.5px;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
 
   &::after {
@@ -55,7 +58,7 @@ $greeting-border-width: 17.5px;
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
 
   div:last-of-type {
@@ -64,6 +67,7 @@ $greeting-border-width: 17.5px;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 2;
   }
 
   div:last-of-type {
@@ -130,10 +134,10 @@ $greeting-border-width: 17.5px;
 }
 
 // Sites
-$overlay-from-colour: rgba(76, 195, 196, 1);
-$overlay-to-colour: rgba(46, 153, 155, 1);
-$overlay-from-colour-on-hover: rgba(76, 195, 196, 0.965);
-$overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
+$overlay-from-color: rgba(76, 195, 196, 1);
+$overlay-to-color: rgba(46, 153, 155, 1);
+$overlay-from-color-on-hover: rgba(76, 195, 196, 0.965);
+$overlay-to-color-on-hover: rgba(46, 153, 155, 0.965);
 .sites {
   background-color: $dark-grey;
   overflow: visible;
@@ -189,9 +193,9 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
 
     .overlay {
       background: rgb(76,195,196);
-      background: -moz-linear-gradient(-45deg, $overlay-from-colour 0%, $overlay-to-colour 100%);
-      background: -webkit-linear-gradient(-45deg, $overlay-from-colour 0%, $overlay-to-colour 100%);
-      background: linear-gradient(135deg, $overlay-from-colour 0%, $overlay-to-colour 100%);
+      background: -moz-linear-gradient(-45deg, $overlay-from-color 0%, $overlay-to-color 100%);
+      background: -webkit-linear-gradient(-45deg, $overlay-from-color 0%, $overlay-to-color 100%);
+      background: linear-gradient(135deg, $overlay-from-color 0%, $overlay-to-color 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
     }
 
@@ -264,9 +268,9 @@ $overlay-to-colour-on-hover: rgba(46, 153, 155, 0.965);
     &:hover {
       .overlay {
         background: rgb(76,195,196);
-        background: -moz-linear-gradient(-45deg, $overlay-from-colour-on-hover 0%, $overlay-to-colour-on-hover 100%);
-        background: -webkit-linear-gradient(-45deg, $overlay-from-colour-on-hover 0%, $overlay-to-colour-on-hover 100%);
-        background: linear-gradient(135deg, $overlay-from-colour-on-hover 0%, $overlay-to-colour-on-hover 100%);
+        background: -moz-linear-gradient(-45deg, $overlay-from-color-on-hover 0%, $overlay-to-color-on-hover 100%);
+        background: -webkit-linear-gradient(-45deg, $overlay-from-color-on-hover 0%, $overlay-to-color-on-hover 100%);
+        background: linear-gradient(135deg, $overlay-from-color-on-hover 0%, $overlay-to-color-on-hover 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
 
         transition: all 125ms;
