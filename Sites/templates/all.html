@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Reset.css' %}">
-    <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Main.css' %}">
-    <link rel="stylesheet" href="{% static 'Sites/Stylesheets/Sites.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/Reset.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/Main.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/Sites.css' %}">
   </head>
   <body>
     <div class="container">
@@ -34,10 +34,10 @@
           {% endif %}
             <a href="{{ site.link }}">
               <div class="overlay"></div> <!-- .overlay -->
-              <img src="{% static 'Sites/Thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
+              <img src="{% static 'thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
               <div>
                   <h4>{{ site.title }}</h4>
-                  <img src="{% static 'Sites/Images/Separator.png' %}" alt="Separator.png" />
+                  <img src="{% static 'images/Separator.png' %}" alt="Separator.png" />
                   <p>{{ site.description }}</p>
               </div>
             </a>
@@ -86,7 +86,7 @@
         </form>
       </div> <!-- .viewport-overlay .message-sender -->
       <footer>
-        <img src="{% static 'Sites/Images/Logo.png' %}" alt="Logo.png">
+        <img src="{% static 'images/Logo.png' %}" alt="Logo.png">
       </footer>
 
       <!-- Scripts -->
@@ -98,7 +98,7 @@
         {% endif %}
       </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="{% static 'Sites/Scripts/Sites.js' %}"></script>
+      <script src="{% static 'scripts/Sites.js' %}"></script>
     </div> <!-- .container -->
   </body>
 </html>

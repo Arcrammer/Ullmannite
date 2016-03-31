@@ -74,20 +74,20 @@ footer img {
 
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("fontsBebasNeue-Light.eot");
-  src: url("fontsBebasNeue-Light.eot?#iefix") format("embedded-opentype"), url("fontsBebasNeue-Light.woff2") format("woff2"), url("fontsBebasNeue-Light.woff") format("woff"), url("fontsBebasNeue-Light.ttf") format("truetype"), url("fontsBebasNeue-Light.svg#bebas_neuelight") format("svg");
+  src: url("/assets/fonts/BebasNeue-Light.eot");
+  src: url("/assets/fonts/BebasNeue-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/BebasNeue-Light.woff2") format("woff2"), url("/assets/fonts/BebasNeue-Light.woff") format("woff"), url("/assets/fonts/BebasNeue-Light.ttf") format("truetype"), url("/assets/fonts/BebasNeue-Light.svg#bebas_neuelight") format("svg");
   font-weight: 300;
 }
 @font-face {
   font-family: 'Bebas Neue';
-  src: url("fontsBebasNeue.eot");
-  src: url("fontsBebasNeue.eot?#iefix") format("embedded-opentype"), url("fontsBebasNeue.woff2") format("woff2"), url("fontsBebasNeue.woff") format("woff"), url("fontsBebasNeue.ttf") format("truetype"), url("fontsBebasNeue.svg#bebas_neueregular") format("svg");
+  src: url("/assets/fonts/BebasNeue.eot");
+  src: url("/assets/fonts/BebasNeue.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/BebasNeue.woff2") format("woff2"), url("/assets/fonts/BebasNeue.woff") format("woff"), url("/assets/fonts/BebasNeue.ttf") format("truetype"), url("/assets/fonts/BebasNeue.svg#bebas_neueregular") format("svg");
   font-weight: normal;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("fontsSourceSansPro.eot");
-  src: url("fontsSourceSansPro.eot?#iefix") format("embedded-opentype"), url("fontsSourceSansPro.woff2") format("woff2"), url("fontsSourceSansPro.woff") format("woff"), url("fontsSourceSansPro.ttf") format("truetype"), url("fontsSourceSansPro.svg#bebas_neuelight") format("svg");
+  src: url("/assets/fonts/SourceSansPro.eot");
+  src: url("/assets/fonts/SourceSansPro.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/SourceSansPro.woff2") format("woff2"), url("/assets/fonts/SourceSansPro.woff") format("woff"), url("/assets/fonts/SourceSansPro.ttf") format("truetype"), url("/assets/fonts/SourceSansPro.svg#bebas_neuelight") format("svg");
   font-weight: 300;
 }
 /* line 8, ../Sass/Main.scss */
