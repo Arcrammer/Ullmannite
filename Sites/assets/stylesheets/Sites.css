@@ -1,0 +1,537 @@
+/* line 2, ../Sass/partials/_hover.scss */
+.hvr-outline-out {
+  position: relative;
+}
+/* line 5, ../Sass/partials/_hover.scss */
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+/* line 18, ../Sass/partials/_hover.scss */
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+  border-color: #47e0cd;
+  border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: -webkit-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: linear-gradient(135deg, #47e0cd 0%, #2dcebb 100%);
+  border-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47e0cd', endColorstr='#2dcebb',GradientType=1 );
+  border-style: solid;
+  border-width: 3.5px;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+}
+
+/* line 4, ../Sass/partials/_buttons.scss */
+.aquamarine-button {
+  background-color: transparent;
+  border-color: #47e0cd;
+  border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: -webkit-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
+  border-color: linear-gradient(135deg, #47e0cd 0%, #2dcebb 100%);
+  border-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47e0cd', endColorstr='#2dcebb',GradientType=1 );
+  border-style: solid;
+  border-width: 3.5px;
+  cursor: pointer;
+  color: #595959;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  letter-spacing: 0.25px;
+  outline: none;
+  padding: 12.5px 27.5px;
+  text-transform: uppercase;
+  transition: all 150ms;
+}
+/* line 28, ../Sass/partials/_buttons.scss */
+.aquamarine-button:hover, .aquamarine-button:active, .aquamarine-button:focus {
+  background-color: #48e0ce;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+}
+/* line 39, ../Sass/partials/_buttons.scss */
+.aquamarine-button:active {
+  background-color: #167368;
+}
+
+/* line 2, ../Sass/partials/_footer.scss */
+footer {
+  margin: 15% auto 8.5%;
+  text-align: center;
+}
+/* line 6, ../Sass/partials/_footer.scss */
+footer img {
+  width: 10%;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("fontsBebasNeue-Light.eot");
+  src: url("fontsBebasNeue-Light.eot?#iefix") format("embedded-opentype"), url("fontsBebasNeue-Light.woff2") format("woff2"), url("fontsBebasNeue-Light.woff") format("woff"), url("fontsBebasNeue-Light.ttf") format("truetype"), url("fontsBebasNeue-Light.svg#bebas_neuelight") format("svg");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("fontsBebasNeue.eot");
+  src: url("fontsBebasNeue.eot?#iefix") format("embedded-opentype"), url("fontsBebasNeue.woff2") format("woff2"), url("fontsBebasNeue.woff") format("woff"), url("fontsBebasNeue.ttf") format("truetype"), url("fontsBebasNeue.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("fontsSourceSansPro.eot");
+  src: url("fontsSourceSansPro.eot?#iefix") format("embedded-opentype"), url("fontsSourceSansPro.woff2") format("woff2"), url("fontsSourceSansPro.woff") format("woff"), url("fontsSourceSansPro.ttf") format("truetype"), url("fontsSourceSansPro.svg#bebas_neuelight") format("svg");
+  font-weight: 300;
+}
+/* line 8, ../Sass/Main.scss */
+body {
+  background-color: #f8f8ff;
+  font-family: 'Bebas Neue';
+}
+
+/* line 14, ../Sass/Main.scss */
+.close-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  float: left;
+  height: 50px;
+  margin: 2.5%;
+  padding: 0;
+  width: 50px;
+}
+/* line 24, ../Sass/Main.scss */
+.close-button span {
+  color: #252525;
+  font-size: 7em;
+  font-weight: 300;
+  line-height: 50%;
+}
+
+/* line 4, ../Sass/Sites.scss */
+.banner {
+  color: white;
+  font-size: 1.45em;
+  font-weight: 100;
+  padding: 1.5% 2.5%;
+  position: absolute;
+  left: 0;
+  letter-spacing: 0.125rem;
+  right: 0;
+  z-index: 1;
+}
+/* line 17, ../Sass/Sites.scss */
+.banner.blue {
+  background-color: #2496ce;
+}
+
+/* line 24, ../Sass/Sites.scss */
+.greeting {
+  background-color: black;
+  height: 768px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 1500ms;
+}
+/* line 34, ../Sass/Sites.scss */
+.greeting.short::before, .greeting.short.sites::after, .greeting.short::after {
+  height: 600px;
+}
+/* line 40, ../Sass/Sites.scss */
+.greeting::before, .greeting.sites::after {
+  background: url("../Images/NoahRosenfield.jpg") no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+/* line 52, ../Sass/Sites.scss */
+.greeting::after {
+  background-color: rgba(255, 255, 255, 0.915);
+  content: '';
+  display: block;
+  float: left;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+/* line 64, ../Sass/Sites.scss */
+.greeting div:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+/* line 73, ../Sass/Sites.scss */
+.greeting div:last-of-type {
+  border-right: 17.5px solid white;
+  border-bottom: 17.5px solid white;
+  border-left: 17.5px solid white;
+  height: 40%;
+  margin: auto;
+  min-height: 17.5rem;
+  width: 60%;
+}
+/* line 84, ../Sass/Sites.scss */
+.greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
+  background-color: white;
+  content: '';
+  height: 17.5px;
+  position: absolute;
+  top: 0;
+  width: 12.13592%;
+}
+/* line 94, ../Sass/Sites.scss */
+.greeting div:last-of-type::before, .greeting div.sites:last-of-type::after {
+  left: -1%;
+}
+/* line 100, ../Sass/Sites.scss */
+.greeting div:last-of-type::after {
+  right: -1%;
+}
+/* line 106, ../Sass/Sites.scss */
+.greeting div:last-of-type h1 {
+  font-size: 4em;
+  letter-spacing: 5px;
+  margin-left: 1.5%;
+  position: absolute;
+  top: -7.5%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+/* line 117, ../Sass/Sites.scss */
+.greeting div:last-of-type h4 {
+  letter-spacing: 3.5px;
+  line-height: 115%;
+  font-size: 3em;
+  font-weight: 300;
+  position: relative;
+  top: 35%;
+}
+/* line 128, ../Sass/Sites.scss */
+.greeting div:last-of-type button {
+  display: block;
+  margin: auto;
+  top: 50%;
+}
+
+/* line 141, ../Sass/Sites.scss */
+.sites {
+  background-color: #252525;
+  overflow: visible;
+}
+/* line 145, ../Sass/Sites.scss */
+.sites::before, .sites::after {
+  background: -moz-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
+  background: -webkit-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
+  background: linear-gradient(to bottom, black 0%, rgba(37, 37, 37, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00252525', GradientType=0);
+  content: '';
+  display: block;
+  height: 100px;
+}
+/* line 156, ../Sass/Sites.scss */
+.sites::after {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0) 0, black 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0), black 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0) 0, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000',GradientType=0);
+  clear: left;
+}
+/* line 167, ../Sass/Sites.scss */
+.sites .site {
+  float: left;
+  max-height: 410px;
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+  transition: all 125ms;
+}
+/* line 175, ../Sass/Sites.scss */
+.sites .site:nth-of-type(1), .sites .site:nth-of-type(2) {
+  margin-top: -15%;
+}
+/* line 180, ../Sass/Sites.scss */
+.sites .site:last-child, .sites .site:nth-last-child(2) {
+  margin-bottom: -15%;
+}
+/* line 185, ../Sass/Sites.scss */
+.sites .site:nth-child(2n-1) {
+  margin-left: 10%;
+}
+/* line 189, ../Sass/Sites.scss */
+.sites .site.loner {
+  clear: both;
+  margin-left: 30%;
+}
+/* line 194, ../Sass/Sites.scss */
+.sites .site .overlay {
+  background: #4cc3c4;
+  background: -moz-linear-gradient(-45deg, #4cc3c4 0%, #2e999b 100%);
+  background: -webkit-linear-gradient(-45deg, #4cc3c4 0%, #2e999b 100%);
+  background: linear-gradient(135deg, #4cc3c4 0%, #2e999b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
+}
+/* line 202, ../Sass/Sites.scss */
+.sites .site a:link,
+.sites .site a:visited {
+  color: #f8f8ff;
+  display: block;
+  text-decoration: none;
+}
+/* line 209, ../Sass/Sites.scss */
+.sites .site div {
+  padding: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transition: all 125ms;
+}
+/* line 219, ../Sass/Sites.scss */
+.sites .site div h4,
+.sites .site div img,
+.sites .site div p {
+  transition: all 125ms;
+}
+/* line 225, ../Sass/Sites.scss */
+.sites .site div h4,
+.sites .site div p {
+  font-weight: 600;
+  line-height: 135%;
+}
+/* line 231, ../Sass/Sites.scss */
+.sites .site div h4 {
+  font-family: "Nexa";
+  font-size: 2.5em;
+  letter-spacing: 0.15rem;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+/* line 245, ../Sass/Sites.scss */
+.sites .site div img {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  bottom: 0;
+  left: 35%;
+  width: 30%;
+}
+/* line 254, ../Sass/Sites.scss */
+.sites .site div p {
+  font-family: "Source Sans Pro";
+  font-size: 1.575em;
+  letter-spacing: 0.045rem;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  left: 12.5%;
+  width: 75%;
+}
+/* line 269, ../Sass/Sites.scss */
+.sites .site:hover .overlay {
+  background: #4cc3c4;
+  background: -moz-linear-gradient(-45deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
+  background: linear-gradient(135deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
+  transition: all 125ms;
+}
+/* line 279, ../Sass/Sites.scss */
+.sites .site:hover div {
+  margin: 2.5%;
+  padding: 7.5%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 288, ../Sass/Sites.scss */
+.sites .site:hover div img {
+  left: 34.5%;
+  width: 31.25%;
+}
+/* line 293, ../Sass/Sites.scss */
+.sites .site:hover div p {
+  left: 10.75%;
+  width: 78.75%;
+}
+
+/* line 303, ../Sass/Sites.scss */
+.message-sender {
+  background: rgba(248, 248, 255, 0.985);
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 313, ../Sass/Sites.scss */
+.message-sender form {
+  margin: auto;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  text-align: center;
+  width: 35%;
+}
+/* line 329, ../Sass/Sites.scss */
+.message-sender .prob {
+  font-size: 1.15em;
+  letter-spacing: 0.035rem;
+  margin-top: 12.5%;
+  margin-bottom: 5%;
+}
+/* line 337, ../Sass/Sites.scss */
+.message-sender .prob:first-of-type {
+  margin-top: 2.5%;
+}
+/* line 342, ../Sass/Sites.scss */
+.message-sender input[type="submit"] {
+  margin: 10% auto;
+  width: 40%;
+}
+/* line 347, ../Sass/Sites.scss */
+.message-sender input:not([type="submit"]),
+.message-sender textarea {
+  background-color: transparent;
+  border-width: 0;
+  border-bottom: 2px solid #222;
+  color: #505050;
+  font-family: "Source Sans Pro";
+  font-size: 1.5em;
+  letter-spacing: 0.015rem;
+  margin: 10% auto;
+  outline: none;
+  padding: 5% 15%;
+  width: 68%;
+}
+/* line 365, ../Sass/Sites.scss */
+.message-sender input:not([type="submit"]):focus,
+.message-sender textarea:focus {
+  background-color: #f2f2f9;
+  border: 0.2rem solid #d8d8de;
+  transition: border-style 75ms;
+}
+/* line 374, ../Sass/Sites.scss */
+.message-sender input:not([type="submit"]).has-probs,
+.message-sender textarea.has-probs {
+  margin: 0 auto;
+}
+/* line 379, ../Sass/Sites.scss */
+.message-sender textarea {
+  height: 150px;
+  font-size: 1.35em;
+  line-height: 175%;
+  letter-spacing: 0.005rem;
+  resize: none;
+}
+
+@media (max-width: 750px) {
+  /* line 393, ../Sass/Sites.scss */
+  .greeting div:last-of-type {
+    border-right: 12.5px solid white;
+    border-bottom: 12.5px solid white;
+    border-left: 12.5px solid white;
+    padding: 2.3511% 8.45411%;
+  }
+  /* line 401, ../Sass/Sites.scss */
+  .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
+    height: 12.5px;
+    width: 5.66343%;
+  }
+  /* line 407, ../Sass/Sites.scss */
+  .greeting div:last-of-type h1 {
+    font-size: 2.5em;
+    margin-left: 1%;
+    letter-spacing: 2.5px;
+    top: -5%;
+  }
+  /* line 414, ../Sass/Sites.scss */
+  .greeting div:last-of-type h4 {
+    top: 15%;
+  }
+  /* line 418, ../Sass/Sites.scss */
+  .greeting div:last-of-type button {
+    top: 27.5%;
+  }
+
+  /* line 426, ../Sass/Sites.scss */
+  .sites .site {
+    margin: 0 !important;
+    margin-left: 5% !important;
+    width: 90%;
+  }
+  /* line 431, ../Sass/Sites.scss */
+  .sites .site:first-of-type {
+    margin-top: -35% !important;
+  }
+  /* line 435, ../Sass/Sites.scss */
+  .sites .site:last-of-type {
+    margin-bottom: -35% !important;
+  }
+
+  /* line 443, ../Sass/Sites.scss */
+  .message-sender form {
+    top: 6.5%;
+    bottom: 6.5%;
+    width: 80%;
+  }
+
+  /* line 450, ../Sass/Sites.scss */
+  footer img {
+    margin-top: 10% !important;
+    width: 20%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 458, ../Sass/Sites.scss */
+  .greeting div:last-of-type {
+    padding: 1%;
+    width: 80%;
+  }
+}
+@font-face {
+  font-family: 'Nexa';
+  src: url("fontsNexa-Bold.eot");
+  src: url("fontsNexa-Bold.eot?#iefix") format("embedded-opentype"), url("fontsNexa-Bold.woff2") format("woff2"), url("fontsNexa-Bold.woff") format("woff"), url("fontsNexa-Bold.ttf") format("truetype"), url("fontsNexa-Bold.svg#nexa_boldregular") format("svg");
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("fontsSourceSansPro-Bold.eot");
+  src: url("fontsSourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("fontsSourceSansPro-Bold.woff2") format("woff2"), url("fontsSourceSansPro-Bold.woff") format("woff"), url("fontsSourceSansPro-Bold.ttf") format("truetype"), url("fontsSourceSansPro-Bold.svg#bebas_neuelight") format("svg");
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=Sites.css.map */
