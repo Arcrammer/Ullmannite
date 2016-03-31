@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,13 +7,17 @@
     <!-- Metadata -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="{% static 'stylesheets/Blog-Main.css' %}">
   </head>
   <body>
     <main class="container">
       {% for post in posts %}
         <article class="blog-post">
           <h1>{{ post.title }}</h1>
-          {{ post.body }}
+          {{ post.body | safe }}
+          <time class="date">{{ post.date_posted | date:"l, j F, Y" }}</time>
         </article>
       {% endfor %}
     </main> <!-- .container -->

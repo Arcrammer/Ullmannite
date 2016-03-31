@@ -10,7 +10,9 @@ gulp.task 'default', ->
 
   # Watch and compile Sass
   exec 'rvm use 2.2.4 && compass watch Sites/assets/'
+  exec 'rvm use 2.2.4 && compass watch Blog/assets/'
 
   # Watch and compile CoffeeScript
   exec 'coffee -cw Sites/assets/'
+  exec 'coffee -cw Blog/assets/'
   return

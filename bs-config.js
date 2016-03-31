@@ -21,8 +21,8 @@ module.exports = {
     },
     "files": [
       "*/templates/*",
-      "*/assets/*/Scripts/*",
-      "*/assets/*/Stylesheets/*"
+      "*/assets/scripts/*",
+      "*/assets/stylesheets/*"
     ],
     "watchOptions": {},
     "server": false,
