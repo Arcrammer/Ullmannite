@@ -146,7 +146,7 @@ body {
 }
 /* line 40, ../sass/Sites.scss */
 .greeting::before, .greeting.sites::after {
-  background: url("../Images/NoahRosenfield.jpg") no-repeat;
+  background: url("../images/NoahRosenfield.jpg") no-repeat;
   background-size: cover;
   content: '';
   display: block;
@@ -523,13 +523,13 @@ body {
 }
 @font-face {
   font-family: 'Nexa';
-  src: url("../Fonts/Nexa-Bold.eot");
-  src: url("../Fonts/Nexa-Bold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Nexa-Bold.woff2") format("woff2"), url("../Fonts/Nexa-Bold.woff") format("woff"), url("../Fonts/Nexa-Bold.ttf") format("truetype"), url("../Fonts/Nexa-Bold.svg#nexa_boldregular") format("svg");
+  src: url("../fonts/Nexa-Bold.eot");
+  src: url("../fonts/Nexa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nexa-Bold.woff2") format("woff2"), url("../fonts/Nexa-Bold.woff") format("woff"), url("../fonts/Nexa-Bold.ttf") format("truetype"), url("../fonts/Nexa-Bold.svg#nexa_boldregular") format("svg");
   font-weight: 600;
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("../Fonts/SourceSansPro-Bold.eot");
-  src: url("../Fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../Fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../Fonts/SourceSansPro-Bold.woff") format("woff"), url("../Fonts/SourceSansPro-Bold.ttf") format("truetype"), url("../Fonts/SourceSansPro-Bold.svg#bebas_neuelight") format("svg");
+  src: url("../fonts/SourceSansPro-Bold.eot");
+  src: url("../fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff"), url("../fonts/SourceSansPro-Bold.ttf") format("truetype"), url("../fonts/SourceSansPro-Bold.svg#bebas_neuelight") format("svg");
   font-weight: 600;
 }
