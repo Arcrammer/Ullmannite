@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path.append("/var/www/Ullmannite")
+sys.path.append("/var/www/Ullmannite/Ullmannite")
 
 from django.core.wsgi import get_wsgi_application
 
