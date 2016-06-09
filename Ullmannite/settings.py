@@ -6,8 +6,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('ULLMANNITE_SECRET', 'n_2@)v_d-t3thm=ezahz!u$f#c6!dua63%dq70=2eb%v*0x*6*')
 
+DEBUG = False
+
+ADMINS = [('Alexander', 'Alexander2475914@gmail.com')]
+
 # Application definition
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['ialexander.io', 'beta.ialexander.io', 'localhost']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,7 +49,7 @@ TEMPLATES = [
         },
     },
 ]
-WSGI_APPLICATION = 'Ullmannite.wsgi_staging.application'
+WSGI_APPLICATION = 'Ullmannite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -54,12 +58,12 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Ullmannite',
         'USER': 'alexander',
-        'PASSWORD': os.getenv('POSTGRES_DATABASE_PASSWORD')
+        'PASSWORD': os.getenv('ULLMANNITE_DATABASE_PASSWORD')
     },
-    'SQLite': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    # 'SQLite': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
 }
 
 # Password validation

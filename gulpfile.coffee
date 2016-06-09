@@ -2,8 +2,11 @@ gulp = require('gulp')
 exec = require('child_process').exec
 
 gulp.task 'default', ->
+  # Start PostgreSQL
+  exec('open /Applications/Postgres.app')
+
   # Start the development server
-  exec './manage.py runserver --settings=settings_development.py'
+  exec 'python3.5 manage.py runserver'
 
   # Start Browser-Sync
   exec '$HOME/.nvm/nvm.sh use 5 && browser-sync start --config=bs-config.js'
