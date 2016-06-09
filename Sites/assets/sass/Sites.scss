@@ -234,12 +234,14 @@ $overlay-to-color-on-hover: rgba(46, 153, 155, 0.965);
           size: 2.5em;
         }
         letter-spacing: 0.15rem;
+        margin: auto;
         position: absolute;
         top: 10%;
         right: 0;
         bottom: 0;
         left: 0;
         text-transform: uppercase;
+        width: 95%;
       }
 
       img {

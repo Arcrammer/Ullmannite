@@ -4,6 +4,8 @@ from django.utils       import timezone
 from tinymce.models     import HTMLField
 
 class Blog(models.Model):
+    class Meta:
+        db_table = 'blog_posts'
     title = models.CharField(max_length=128)
     body = HTMLField()
     date_posted = models.DateTimeField(default=timezone.now)

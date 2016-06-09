@@ -323,14 +323,16 @@ body {
   font-family: "Nexa";
   font-size: 2.5em;
   letter-spacing: 0.15rem;
+  margin: auto;
   position: absolute;
   top: 10%;
   right: 0;
   bottom: 0;
   left: 0;
   text-transform: uppercase;
+  width: 95%;
 }
-/* line 245, ../sass/Sites.scss */
+/* line 247, ../sass/Sites.scss */
 .sites .site div img {
   position: absolute;
   top: 45%;
@@ -339,7 +341,7 @@ body {
   left: 35%;
   width: 30%;
 }
-/* line 254, ../sass/Sites.scss */
+/* line 256, ../sass/Sites.scss */
 .sites .site div p {
   font-family: "Source Sans Pro";
   font-size: 1.575em;
@@ -350,7 +352,7 @@ body {
   left: 12.5%;
   width: 75%;
 }
-/* line 269, ../sass/Sites.scss */
+/* line 271, ../sass/Sites.scss */
 .sites .site:hover .overlay {
   background: #4cc3c4;
   background: -moz-linear-gradient(-45deg, rgba(76, 195, 196, 0.965) 0%, rgba(46, 153, 155, 0.965) 100%);
@@ -359,7 +361,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cc3c4', endColorstr='#2e999b',GradientType=1);
   transition: all 125ms;
 }
-/* line 279, ../sass/Sites.scss */
+/* line 281, ../sass/Sites.scss */
 .sites .site:hover div {
   margin: 2.5%;
   padding: 7.5%;
@@ -369,18 +371,18 @@ body {
   bottom: 0;
   left: 0;
 }
-/* line 288, ../sass/Sites.scss */
+/* line 290, ../sass/Sites.scss */
 .sites .site:hover div img {
   left: 34.5%;
   width: 31.25%;
 }
-/* line 293, ../sass/Sites.scss */
+/* line 295, ../sass/Sites.scss */
 .sites .site:hover div p {
   left: 10.75%;
   width: 78.75%;
 }
 
-/* line 303, ../sass/Sites.scss */
+/* line 305, ../sass/Sites.scss */
 .message-sender {
   background: rgba(248, 248, 255, 0.985);
   display: none;
@@ -391,7 +393,7 @@ body {
   left: 0;
   z-index: 2;
 }
-/* line 313, ../sass/Sites.scss */
+/* line 315, ../sass/Sites.scss */
 .message-sender form {
   margin: auto;
   overflow: auto;
@@ -405,23 +407,23 @@ body {
   text-align: center;
   width: 35%;
 }
-/* line 329, ../sass/Sites.scss */
+/* line 331, ../sass/Sites.scss */
 .message-sender .prob {
   font-size: 1.15em;
   letter-spacing: 0.035rem;
   margin-top: 12.5%;
   margin-bottom: 5%;
 }
-/* line 337, ../sass/Sites.scss */
+/* line 339, ../sass/Sites.scss */
 .message-sender .prob:first-of-type {
   margin-top: 2.5%;
 }
-/* line 342, ../sass/Sites.scss */
+/* line 344, ../sass/Sites.scss */
 .message-sender input[type="submit"] {
   margin: 10% auto;
   width: 40%;
 }
-/* line 347, ../sass/Sites.scss */
+/* line 349, ../sass/Sites.scss */
 .message-sender input:not([type="submit"]),
 .message-sender textarea {
   background-color: transparent;
@@ -436,19 +438,19 @@ body {
   padding: 5% 15%;
   width: 68%;
 }
-/* line 365, ../sass/Sites.scss */
+/* line 367, ../sass/Sites.scss */
 .message-sender input:not([type="submit"]):focus,
 .message-sender textarea:focus {
   background-color: #f2f2f9;
   border: 0.2rem solid #d8d8de;
   transition: border-style 75ms;
 }
-/* line 374, ../sass/Sites.scss */
+/* line 376, ../sass/Sites.scss */
 .message-sender input:not([type="submit"]).has-probs,
 .message-sender textarea.has-probs {
   margin: 0 auto;
 }
-/* line 379, ../sass/Sites.scss */
+/* line 381, ../sass/Sites.scss */
 .message-sender textarea {
   height: 150px;
   font-size: 1.35em;
@@ -458,64 +460,64 @@ body {
 }
 
 @media (max-width: 750px) {
-  /* line 393, ../sass/Sites.scss */
+  /* line 395, ../sass/Sites.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 401, ../sass/Sites.scss */
+  /* line 403, ../sass/Sites.scss */
   .greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 407, ../sass/Sites.scss */
+  /* line 409, ../sass/Sites.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 414, ../sass/Sites.scss */
+  /* line 416, ../sass/Sites.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 418, ../sass/Sites.scss */
+  /* line 420, ../sass/Sites.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 
-  /* line 426, ../sass/Sites.scss */
+  /* line 428, ../sass/Sites.scss */
   .sites .site {
     margin: 0 !important;
     margin-left: 5% !important;
     width: 90%;
   }
-  /* line 431, ../sass/Sites.scss */
+  /* line 433, ../sass/Sites.scss */
   .sites .site:first-of-type {
     margin-top: -35% !important;
   }
-  /* line 435, ../sass/Sites.scss */
+  /* line 437, ../sass/Sites.scss */
   .sites .site:last-of-type {
     margin-bottom: -35% !important;
   }
 
-  /* line 443, ../sass/Sites.scss */
+  /* line 445, ../sass/Sites.scss */
   .message-sender form {
     top: 6.5%;
     bottom: 6.5%;
     width: 80%;
   }
 
-  /* line 450, ../sass/Sites.scss */
+  /* line 452, ../sass/Sites.scss */
   footer img {
     margin-top: 10% !important;
     width: 20%;
   }
 }
 @media (max-width: 400px) {
-  /* line 458, ../sass/Sites.scss */
+  /* line 460, ../sass/Sites.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;

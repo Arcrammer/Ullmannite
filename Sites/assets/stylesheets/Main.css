@@ -1,8 +1,8 @@
-/* line 2, ../Sass/partials/_hover.scss */
+/* line 2, ../sass/partials/_hover.scss */
 .hvr-outline-out {
   position: relative;
 }
-/* line 5, ../Sass/partials/_hover.scss */
+/* line 5, ../sass/partials/_hover.scss */
 .hvr-outline-out:before {
   content: '';
   position: absolute;
@@ -15,7 +15,7 @@
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-/* line 18, ../Sass/partials/_hover.scss */
+/* line 18, ../sass/partials/_hover.scss */
 .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
   border-color: #47e0cd;
   border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);
@@ -30,7 +30,7 @@
   left: -6px;
 }
 
-/* line 4, ../Sass/partials/_buttons.scss */
+/* line 4, ../sass/partials/_buttons.scss */
 .aquamarine-button {
   background-color: transparent;
   border-color: #47e0cd;
@@ -50,24 +50,24 @@
   text-transform: uppercase;
   transition: all 150ms;
 }
-/* line 28, ../Sass/partials/_buttons.scss */
+/* line 28, ../sass/partials/_buttons.scss */
 .aquamarine-button:hover, .aquamarine-button:active, .aquamarine-button:focus {
   background-color: #48e0ce;
   color: white;
   border-color: white;
   border-width: 2px;
 }
-/* line 39, ../Sass/partials/_buttons.scss */
+/* line 39, ../sass/partials/_buttons.scss */
 .aquamarine-button:active {
   background-color: #167368;
 }
 
-/* line 2, ../Sass/partials/_footer.scss */
+/* line 2, ../sass/partials/_footer.scss */
 footer {
   margin: 15% auto 8.5%;
   text-align: center;
 }
-/* line 6, ../Sass/partials/_footer.scss */
+/* line 6, ../sass/partials/_footer.scss */
 footer img {
   width: 10%;
 }
@@ -90,13 +90,13 @@ footer img {
   src: url("/assets/fonts/SourceSansPro.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/SourceSansPro.woff2") format("woff2"), url("/assets/fonts/SourceSansPro.woff") format("woff"), url("/assets/fonts/SourceSansPro.ttf") format("truetype"), url("/assets/fonts/SourceSansPro.svg#bebas_neuelight") format("svg");
   font-weight: 300;
 }
-/* line 8, ../Sass/Main.scss */
+/* line 8, ../sass/Main.scss */
 body {
   background-color: #f8f8ff;
   font-family: 'Bebas Neue';
 }
 
-/* line 14, ../Sass/Main.scss */
+/* line 14, ../sass/Main.scss */
 .close-button {
   background: transparent;
   border: 0;
@@ -107,12 +107,10 @@ body {
   padding: 0;
   width: 50px;
 }
-/* line 24, ../Sass/Main.scss */
+/* line 24, ../sass/Main.scss */
 .close-button span {
   color: #252525;
   font-size: 7em;
   font-weight: 300;
   line-height: 50%;
 }
-
-/*# sourceMappingURL=Main.css.map */
