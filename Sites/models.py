@@ -6,10 +6,10 @@ class Site(models.Model):
         db_table = 'sites'
     title = models.CharField(max_length=128)
     subtitle = models.CharField(max_length=128, null=True)
-    link = models.CharField(max_length=128)
     description = models.CharField(max_length=128)
+    link = models.CharField(max_length=128)
     thumbnail_filename = models.CharField(max_length=128)
-    precedence = models.FloatField(max_length=128, default=0)
+    online = models.BooleanField(default=False)
 
 class SiteAdmin(admin.ModelAdmin):
-    list_display = ('title', 'link', 'subtitle', 'precedence')
+    list_display = ('title', 'link', 'subtitle')

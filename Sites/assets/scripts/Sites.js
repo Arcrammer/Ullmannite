@@ -3,14 +3,7 @@
   (function($) {
     $(window).on('resize load', function() {
       var window_height;
-      window_height = $(window).height();
-      if (window_height <= 600) {
-        $('.greeting').addClass('short');
-        return $('.greeting').css('height', '600px');
-      } else {
-        $('.greeting').removeClass('short');
-        return $('.greeting').css('height', window_height);
-      }
+      return window_height = $(window).height();
     });
     $('.say-hello-button').click(function() {
       $('body').css('overflow', 'hidden');

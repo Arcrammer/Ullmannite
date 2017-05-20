@@ -64,14 +64,21 @@
 
 /* line 2, ../sass/partials/_footer.scss */
 footer {
-  margin: 15% auto 8.5%;
+  margin: 100px auto 25px;
   text-align: center;
 }
 /* line 6, ../sass/partials/_footer.scss */
 footer img {
   width: 10%;
+  max-width: 100px;
 }
 
+@media (max-width: 750px) {
+  /* line 13, ../sass/partials/_footer.scss */
+  footer {
+    margin-top: 50px;
+  }
+}
 @font-face {
   font-family: 'Bebas Neue';
   src: url("/assets/fonts/BebasNeue-Light.eot");

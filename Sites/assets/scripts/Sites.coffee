@@ -3,12 +3,12 @@
     # Make the 'div's the same
     # height as the viewport
     window_height = $(window).height()
-    if window_height <= 600
-      $('.greeting').addClass 'short'
-      $('.greeting').css 'height', '600px'
-    else
-      $('.greeting').removeClass 'short'
-      $('.greeting').css 'height', window_height
+    # if window_height <= 600
+    #   $('.greeting').addClass 'short'
+    #   $('.greeting').css 'height', '600px'
+    # else
+    #   $('.greeting').removeClass 'short'
+    #   $('.greeting').css 'height', window_height
 
   $('.say-hello-button').click ->
     # Don't let 'body' scroll

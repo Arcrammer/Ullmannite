@@ -1,109 +1,118 @@
 ---
 - fields:
+    title: Eximius
     subtitle: ASSL Main Project
     description: Job board featuring hand-reviewed listings.
-    precedence: 0
-    title: Eximius
-    link: http://eximius-laravel.ullmannite.ml/
+    link: http://eximius-laravel.ialexander.io/
     thumbnail_filename: Eximius.jpg
+    online: false
   model: Sites.site
   pk: 1
 - fields:
+    title: Tara Crammer Designs
     subtitle: Personal
     description: Portfolio and blog for my aunt, Tara.
-    precedence: 0
-    title: Tara Crammer Designs
-    link: http://taracrammerdesigns.tk/
+    link: http://tara-crammer-designs.ialexander.io/
     thumbnail_filename: TaraCrammerDesigns.jpg
+    online: false
   model: Sites.site
   pk: 2
 - fields:
-    subtitle: PWA2 Main Project
-    description: PHP site featuring CRUD through PDO
-    precedence: 0
-    title: '11'
-    link: http://pwa2.ullmannite.ml/
-    thumbnail_filename: 11(PWA2).jpg
+    title: Savannah
+    subtitle: Final Project
+    description: Final project at Full Sail University
+    link: http://savannah.ialexander.io/
+    thumbnail_filename: Savannah(FinalProject).png
+    online: false
   model: Sites.site
   pk: 3
-- fields:
-    subtitle: RMO Final Project
-    description: Rails site using mediaelement as a video player.
-    precedence: 0
-    title: RMO Final Project
-    link: http://rmo.ullmannite.ml/
-    thumbnail_filename: ThirdPartyPlayer(RMO).jpg
-  model: Sites.site
-  pk: 4
-- fields:
-    subtitle: WIA
-    description: Presentation through a third-party JavaScript library
-    precedence: 0
-    title: The Presentation
-    link: http://wia-the-presentation.ullmannite.ml/
-    thumbnail_filename: ThePresentation(WIA).jpg
-  model: Sites.site
-  pk: 6
-- fields:
-    subtitle: WIA Final Project
-    description: Smartphone retailer featuring HTML canvas drawing.
-    precedence: 0
-    title: Uniin
-    link: http://uniin.ullmannite.ml/
-    thumbnail_filename: Uniin(WIA).jpg
-  model: Sites.site
-  pk: 7
-- fields:
-    subtitle: FEWF Week Three Project
-    description: Contact manager built on Bootstrap and Angular
-    precedence: 0
-    title: Employee Directory
-    link: http://fewf-employee-directory.ullmannite.ml/
-    thumbnail_filename: EmployeeDirectory(FEWF).jpg
-  model: Sites.site
-  pk: 8
-- fields:
-    subtitle: DWS2 Week One Project
-    description: New York fan-site made without a front-end framework
-    precedence: 0
-    title: New York
-    link: http://dws-new-york.ullmannite.ml/
-    thumbnail_filename: NewYork(DWS2,Vanilla).jpg
-  model: Sites.site
-  pk: 9
-- fields:
-    subtitle: DWS Week Four Project
-    description: Italy fan-site made with Bootstrap
-    precedence: 0
-    title: Italy
-    link: http://dws-italy.ullmannite.ml/
-    thumbnail_filename: Italy(DWS2).jpg
-  model: Sites.site
-  pk: 10
-- fields:
-    subtitle: Internship
-    description: Music consulting company based in San Francisco, California.
-    precedence: 0.9
-    title: KJEM Consulting
-    link: http://kjem-consulting.ullmannite.ml/
-    thumbnail_filename: KJEMConsulting.jpg
-  model: Sites.site
-  pk: 12
-- fields:
-    subtitle: Professional
-    description: Sports organization for behavior modification
-    precedence: 1
-    title: Prep Stars
-    link: http://prep-stars.ullmannite.ml/
-    thumbnail_filename: PrepStars.jpg
-  model: Sites.site
-  pk: 13
-- fields:
-    subtitle: Final Project
-    description: Ecommerce and seminar site
-    precedence: 1
-    title: Savannah
-    link: http://savannah.ullmannite.ml/
-    thumbnail_filename: Savannah.jpg
-  model: Sites.site
-  pk: 14
+# - fields:
+#     subtitle: PWA2 Main Project
+#     description: PHP site featuring CRUD through PDO
+#     title: '11'
+#     link: http://pwa2.ialexander.io/
+#     thumbnail_filename: 11(PWA2).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 3
+# - fields:
+#     subtitle: RMO Final Project
+#     description: Rails site using mediaelement as a video player.
+#     title: RMO Final Project
+#     link: http://rmo.ialexander.io/
+#     thumbnail_filename: ThirdPartyPlayer(RMO).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 4
+# - fields:
+#     subtitle: WIA
+#     description: Presentation through a third-party JavaScript library
+#     title: The Presentation
+#     link: http://wia-the-presentation.ialexander.io/
+#     thumbnail_filename: ThePresentation(WIA).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 6
+# - fields:
+#     subtitle: WIA Final Project
+#     description: Smartphone retailer featuring HTML canvas drawing.
+#     title: Uniin
+#     link: http://uniin.ialexander.io/
+#     thumbnail_filename: Uniin(WIA).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 7
+# - fields:
+#     subtitle: FEWF Week Three Project
+#     description: Contact manager built on Bootstrap and Angular
+#     title: Employee Directory
+#     link: http://fewf-employee-directory.ialexander.io/
+#     thumbnail_filename: EmployeeDirectory(FEWF).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 8
+# - fields:
+#     subtitle: DWS2 Week One Project
+#     description: New York fan-site made without a front-end framework
+#     title: New York
+#     link: http://dws-new-york.ialexander.io/
+#     thumbnail_filename: NewYork(DWS2,Vanilla).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 9
+# - fields:
+#     subtitle: DWS Week Four Project
+#     description: Italy fan-site made with Bootstrap
+#     title: Italy
+#     link: http://dws-italy.ialexander.io/
+#     thumbnail_filename: Italy(DWS2).jpg
+#     online: false
+#   model: Sites.site
+#   pk: 10
+# - fields:
+#     subtitle: Internship
+#     description: Music consulting company based in San Francisco, California.
+#     title: KJEM Consulting
+#     link: http://kjem-consulting.ialexander.io/
+#     thumbnail_filename: KJEMConsulting.jpg
+#     online: false
+#   model: Sites.site
+#   pk: 12
+# - fields:
+#     subtitle: Professional
+#     description: Sports organization for behavior modification
+#     title: Prep Stars
+#     link: http://prep-stars.ialexander.io/
+#     thumbnail_filename: PrepStars.jpg
+#     online: false
+#   model: Sites.site
+#   pk: 13
+# - fields:
+#     subtitle: Final Project
+#     description: Ecommerce and seminar site
+#     title: Savannah
+#     link: http://savannah.ialexander.io/
+#     thumbnail_filename: Savannah.jpg
+#     online: false
+#   model: Sites.site
+#   pk: 14

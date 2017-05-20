@@ -25,25 +25,29 @@
           <button class="aquamarine-button hvr-outline-out say-hello-button">Say Hello</button>
         </div>
       </div> <!-- .greeting -->
-      <div class="sites">
-        {% for site in sites %}
-          {% if forloop.last %}
-            <div class="site {{ last_site_is_loner|yesno:'loner,' }}">
-          {% else %}
-            <div class="site">
-          {% endif %}
-            <a href="{{ site.link }}">
-              <div class="overlay"></div> <!-- .overlay -->
-              <img src="{% static 'thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
-              <div>
-                  <h4>{{ site.title }}</h4>
-                  <img src="{% static 'images/Separator.png' %}" alt="Separator.png" />
-                  <p>{{ site.description }}</p>
-              </div>
-            </a>
-          </div> <!-- .site -->
-        {% endfor %}
-      </div> <!-- .sites -->
+      <div class="sites-container">
+        <div class="sites">
+          {% for site in sites %}
+            {% if forloop.last %}
+              <div class="site {{ site.online|yesno:'online,offline' }} {{ last_site_is_loner|yesno:'loner,' }}">
+            {% else %}
+              <div class="site {{ site.online|yesno:'online,offline' }}">
+            {% endif %}
+              <div class="site-info">
+                <a href="{{ site.link }}">
+                  <div class="overlay"></div> <!-- .overlay -->
+                  <img src="{% static 'thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
+                  <div>
+                      <h4>{{ site.title }}</h4>
+                      <img src="{% static 'images/Separator.png' %}" alt="Separator.png" />
+                      <p>{{ site.description }}</p>
+                  </div>
+                </a>
+              </div> <!-- .site-info -->
+            </div> <!-- .site -->
+          {% endfor %}
+        </div> <!-- .sites -->
+      </div> <!-- .sites-container -->
       <div class="viewport-overlay message-sender">
         <button class="close-button">
           <span>&times;</span>

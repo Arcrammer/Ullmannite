@@ -1,9 +1,16 @@
 // Footer of every page
 footer {
-  margin: 15% auto 8.5%;
+  margin: 100px auto 25px;
   text-align: center;
 
   img {
     width: 10%;
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 750px) {
+  footer {
+    margin-top: 50px;
   }
 }
