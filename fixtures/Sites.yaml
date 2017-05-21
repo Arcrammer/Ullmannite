@@ -26,6 +26,33 @@
     online: false
   model: Sites.site
   pk: 3
+- fields:
+    subtitle: FEWF — Front-end Web Frameworks
+    description: Grocery list app created with Angular
+    title: Grocery List
+    link: http://fewf-grocery-list.ialexander.io/
+    thumbnail_filename: GroceryList(FEWF).jpg
+    online: true
+  model: Sites.site
+  pk: 4
+- fields:
+    subtitle: FEWF — Front-end Web Frameworks
+    description: Contact manager built on Bootstrap and Angular
+    title: Employee Directory
+    link: http://fewf-employee-directory.ialexander.io/
+    thumbnail_filename: EmployeeDirectory(FEWF).jpg
+    online: true
+  model: Sites.site
+  pk: 5
+- fields:
+    subtitle: FEWF — Front-end Web Frameworks
+    description: Task, grocery, and lecture lists using Angular
+    title: CRUD-Style Application
+    link: http://fewf-crud-style-application.ialexander.io/
+    thumbnail_filename: CRUDStyleApplication(FEWF).jpg
+    online: true
+  model: Sites.site
+  pk: 6
 # - fields:
 #     subtitle: PWA2 Main Project
 #     description: PHP site featuring CRUD through PDO
@@ -62,15 +89,6 @@
 #     online: false
 #   model: Sites.site
 #   pk: 7
-# - fields:
-#     subtitle: FEWF Week Three Project
-#     description: Contact manager built on Bootstrap and Angular
-#     title: Employee Directory
-#     link: http://fewf-employee-directory.ialexander.io/
-#     thumbnail_filename: EmployeeDirectory(FEWF).jpg
-#     online: false
-#   model: Sites.site
-#   pk: 8
 # - fields:
 #     subtitle: DWS2 Week One Project
 #     description: New York fan-site made without a front-end framework
